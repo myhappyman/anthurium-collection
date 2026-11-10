@@ -8,10 +8,10 @@
       "abbreviations": ["QA", "waro"],
       "parents": [],
       "aka": ["Queen Anthurium", "퀸"],
-      "descriptionKo": "콜롬비아 자생의 정식 기재 자연종으로, 대표 펜던트 벨벳 '퀸'. 길게 늘어지는 벨벳질 잎과 또렷한 밝은 잎맥이 특징이며, '킹'(veitchii)과 함께 컬렉션의 상징격으로 꼽힌다. ★구입 주의: 시중 유통 개체 중에는 교배·라인브리딩(다크 폼 선별 등)을 거친 계통이 섞여 있어, 종 자체와 별개로 개체의 출처 확인이 필요하다.",
+      "descriptionKo": "콜롬비아 자생의 정식 기재 원종으로, 대표 펜던트 벨벳 '퀸'. 길게 늘어지는 벨벳질 잎과 또렷한 밝은 잎맥이 특징이며, '킹'(veitchii)과 함께 컬렉션의 상징격으로 꼽힌다. ★구입 주의: 시중 유통 개체 중에는 교배·라인브리딩(다크 폼 선별 등)을 거친 계통이 섞여 있어, 종 자체와 별개로 개체의 출처 확인이 필요하다.",
       "traits": { "leaf": "길게 늘어지는 펜던트형", "vein": "밝은 잎맥 대비", "texture": "벨벳", "origin": "콜롬비아" },
-      "tags": ["벨벳", "퀸", "펜던트", "흰잎맥", "자연종", "유통계통주의"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/L%27Illustration_horticole_%28Plate_392%29.jpg/960px-L%27Illustration_horticole_%28Plate_392%29.jpg"], "sources": [], "verified": true
+      "tags": ["벨벳", "퀸", "펜던트", "흰잎맥", "원종", "유통계통주의"],
+      "images": ["images/warocqueanum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/L%27Illustration_horticole_%28Plate_392%29.jpg/960px-L%27Illustration_horticole_%28Plate_392%29.jpg"], "sources": [], "verified": true
     },
     {
       "id": "veitchii",
@@ -21,10 +21,10 @@
       "abbreviations": ["KA"],
       "parents": [],
       "aka": ["King Anthurium", "킹"],
-      "descriptionKo": "콜롬비아 자생의 정식 기재 자연종으로, 대표 '킹'. 매우 길게 자라는 펜던트 잎과 잎맥 사이가 깊게 주름(코러게이션)진 광택질 잎이 특징으로, 성숙하면 1m를 훌쩍 넘기도 한다. '퀸'(warocqueanum)과 대비된다. ★구입 주의: 시중 유통 개체 중에는 교배·선별을 거친 계통(와이드 폼/내로우 폼 등)이 섞여 있어, 종 자체와 별개로 개체의 출처 확인이 필요하다.",
+      "descriptionKo": "콜롬비아 자생의 정식 기재 원종으로, 대표 '킹'. 매우 길게 자라는 펜던트 잎과 잎맥 사이가 깊게 주름(코러게이션)진 광택질 잎이 특징으로, 성숙하면 1m를 훌쩍 넘기도 한다. '퀸'(warocqueanum)과 대비된다. ★구입 주의: 시중 유통 개체 중에는 교배·선별을 거친 계통(와이드 폼/내로우 폼 등)이 섞여 있어, 종 자체와 별개로 개체의 출처 확인이 필요하다.",
       "traits": { "leaf": "초장형 펜던트, 깊은 주름", "vein": "함몰된 측맥", "texture": "광택", "origin": "콜롬비아" },
-      "tags": ["킹", "펜던트", "주름잎", "광택", "자연종", "유통계통주의"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Anthurium_veitchii_03.jpg/960px-Anthurium_veitchii_03.jpg"], "sources": [], "verified": true
+      "tags": ["킹", "펜던트", "주름잎", "광택", "원종", "유통계통주의"],
+      "images": ["images/veitchii.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Anthurium_veitchii_03.jpg/960px-Anthurium_veitchii_03.jpg"], "sources": [], "verified": true
     },
     {
       "id": "crystallinum",
@@ -34,10 +34,10 @@
       "abbreviations": ["crystal"],
       "parents": [],
       "aka": [],
-      "descriptionKo": "하트형 벨벳 잎에 밝은 흰 잎맥이 선명한 인기 자연종. 어린잎은 붉은빛을 띠다 성숙하며 짙은 녹색으로 변한다. clarinervium과 자주 비교·혼동된다.",
+      "descriptionKo": "하트형 벨벳 잎에 밝은 흰 잎맥이 선명한 인기 원종. 어린잎은 붉은빛을 띠다 성숙하며 짙은 녹색으로 변한다. clarinervium과 자주 비교·혼동된다.",
       "traits": { "leaf": "하트형", "vein": "선명한 흰 잎맥", "texture": "벨벳", "origin": "중남미" },
-      "tags": ["벨벳", "흰잎맥", "하트형", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/6/61/Alismatales_-_Anthurium_crystallinum_2.jpg"], "sources": [], "verified": true
+      "tags": ["벨벳", "흰잎맥", "하트형", "원종"],
+      "images": ["images/crystallinum.jpg", "https://upload.wikimedia.org/wikipedia/commons/6/61/Alismatales_-_Anthurium_crystallinum_2.jpg"], "sources": [], "verified": true
     },
     {
       "id": "clarinervium",
@@ -47,10 +47,10 @@
       "abbreviations": ["clari"],
       "parents": [],
       "aka": [],
-      "descriptionKo": "멕시코 자생. 두껍고 빳빳한 짙은 녹색 하트형 잎과 흰 잎맥 대비가 강한 자연종. crystallinum보다 잎이 단단하고 잎맥이 더 굵게 보인다.",
+      "descriptionKo": "멕시코 자생. 두껍고 빳빳한 짙은 녹색 하트형 잎과 흰 잎맥 대비가 강한 원종. crystallinum보다 잎이 단단하고 잎맥이 더 굵게 보인다.",
       "traits": { "leaf": "두껍고 빳빳한 하트형", "vein": "굵은 흰 잎맥", "texture": "경질", "origin": "멕시코" },
-      "tags": ["흰잎맥", "경질", "하트형", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Anthurium_clarinervium.jpg/960px-Anthurium_clarinervium.jpg"], "sources": [], "verified": true
+      "tags": ["흰잎맥", "경질", "하트형", "원종"],
+      "images": ["images/clarinervium.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Anthurium_clarinervium.jpg/960px-Anthurium_clarinervium.jpg"], "sources": [], "verified": true
     },
     {
       "id": "regale",
@@ -62,8 +62,8 @@
       "aka": [],
       "descriptionKo": "페루 자생. 매우 큰 벨벳 하트형 잎에 분홍빛이 도는 밝은 잎맥이 특징. 어린잎은 붉은 기를 띠며 성숙하면 거대해진다.",
       "traits": { "leaf": "대형 하트형", "vein": "분홍빛 밝은 잎맥", "texture": "벨벳", "origin": "페루" },
-      "tags": ["벨벳", "대형", "하트형", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/c/c3/20150224_083943_-_Edited.jpg"], "sources": [], "verified": true
+      "tags": ["벨벳", "대형", "하트형", "원종"],
+      "images": ["images/regale.jpg", "https://upload.wikimedia.org/wikipedia/commons/c/c3/20150224_083943_-_Edited.jpg"], "sources": [], "verified": true
     },
     {
       "id": "magnificum",
@@ -75,8 +75,8 @@
       "aka": [],
       "descriptionKo": "콜롬비아 자생. 벨벳 잎과 은백색 잎맥, 그리고 **각진(날개 달린) 잎자루**가 식별 포인트. 어린잎은 구릿빛을 띤다. crystallinum과 닮았지만 잎자루 단면으로 구분한다.",
       "traits": { "leaf": "하트형", "vein": "은백색 잎맥", "texture": "벨벳", "petiole": "각진(날개형) 잎자루", "origin": "콜롬비아" },
-      "tags": ["벨벳", "은맥", "하트형", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Anthurium_magnificum_a1.jpg/960px-Anthurium_magnificum_a1.jpg"], "sources": [], "verified": true
+      "tags": ["벨벳", "은맥", "하트형", "원종"],
+      "images": ["images/magnificum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Anthurium_magnificum_a1.jpg/960px-Anthurium_magnificum_a1.jpg"], "sources": [], "verified": true
     },
     {
       "id": "forgetii",
@@ -88,8 +88,8 @@
       "aka": [],
       "descriptionKo": "콜롬비아 자생. 잎 윗부분에 갈래(로브)가 없는 **타원형 무(無)로브 잎**이 특징 — 잎자루가 잎몸 안쪽에 붙는 순(盾)형. 가는 은맥과 옅은 테두리가 돈다.",
       "traits": { "leaf": "무로브 타원형(순형)", "vein": "가는 은맥", "texture": "벨벳", "origin": "콜롬비아" },
-      "tags": ["은맥", "무로브", "벨벳", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anthurium_forgetii_potted.jpg/960px-Anthurium_forgetii_potted.jpg"], "sources": [], "verified": true
+      "tags": ["은맥", "무로브", "벨벳", "원종"],
+      "images": ["images/forgetii.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Anthurium_forgetii_potted.jpg/960px-Anthurium_forgetii_potted.jpg"], "sources": [], "verified": true
     },
     {
       "id": "luxurians",
@@ -101,8 +101,8 @@
       "aka": [],
       "descriptionKo": "콜롬비아 자생. 두껍고 깊게 요철(bullate)진 거의 흑녹색 잎이 기하학적 질감을 만든다. 잎자루에 거친 돌기가 있는 것도 특징.",
       "traits": { "leaf": "깊은 요철(bullate) 하트형", "texture": "두껍고 거친 질감", "color": "흑녹색", "origin": "콜롬비아" },
-      "tags": ["요철", "다크", "경질", "자연종"],
-      "images": [], "sources": [], "verified": true
+      "tags": ["요철", "다크", "경질", "원종"],
+      "images": ["images/luxurians.jpg"], "sources": [], "verified": true
     },
     {
       "id": "dressleri",
@@ -114,8 +114,8 @@
       "aka": [],
       "descriptionKo": "파나마 자생. 거의 검정에 가까운 짙은 벨벳의 길쭉한 하트형 잎. 다크 벨벳 하이브리드의 핵심 부모로 자주 쓰인다.",
       "traits": { "leaf": "길쭉한 하트형", "texture": "다크 벨벳", "color": "흑녹색", "origin": "파나마" },
-      "tags": ["벨벳", "다크", "자연종"],
-      "images": [], "sources": [], "verified": true
+      "tags": ["벨벳", "다크", "원종"],
+      "images": ["images/dressleri.jpg"], "sources": [], "verified": true
     },
     {
       "id": "papillilaminum",
@@ -127,8 +127,8 @@
       "aka": [],
       "descriptionKo": "파나마 자생. 짙은 벨벳의 길쭉한 하트형 잎. dressleri와 함께 다크·벨벳 계열 교배에 널리 활용된다.",
       "traits": { "leaf": "길쭉한 하트형", "texture": "다크 벨벳", "origin": "파나마" },
-      "tags": ["벨벳", "다크", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Anthurium_papillilaminum.jpg/960px-Anthurium_papillilaminum.jpg"], "sources": [], "verified": true
+      "tags": ["벨벳", "다크", "원종"],
+      "images": ["images/papillilaminum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Anthurium_papillilaminum.jpg/960px-Anthurium_papillilaminum.jpg"], "sources": [], "verified": true
     },
     {
       "id": "radicans",
@@ -138,10 +138,10 @@
       "abbreviations": [],
       "parents": [],
       "aka": [],
-      "descriptionKo": "작게 기는 습성의 자연종으로, 둥글고 깊게 요철(bullate)진 잎을 낸다. 'Dark Mama' 등 요철 질감을 물려주는 인기 교배 부모.",
+      "descriptionKo": "작게 기는 습성의 원종으로, 둥글고 깊게 요철(bullate)진 잎을 낸다. 'Dark Mama' 등 요철 질감을 물려주는 인기 교배 부모.",
       "traits": { "leaf": "둥근 요철잎", "texture": "강한 요철(bullate)", "habit": "포복성 소형", "origin": "브라질" },
-      "tags": ["요철", "소형", "교배부모", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/2/21/Anthurium_radicans.jpg"], "sources": [], "verified": true
+      "tags": ["요철", "소형", "교배부모", "원종"],
+      "images": ["images/radicans.jpg", "https://upload.wikimedia.org/wikipedia/commons/2/21/Anthurium_radicans.jpg"], "sources": [], "verified": true
     },
     {
       "id": "vittarifolium",
@@ -151,10 +151,10 @@
       "abbreviations": [],
       "parents": [],
       "aka": ["Strap-leaf Anthurium"],
-      "descriptionKo": "리본처럼 매우 가늘고 길게 늘어지는 스트랩(끈) 잎이 특징인 펜던트 자연종. 분홍빛 열매도 관상 포인트.",
+      "descriptionKo": "리본처럼 매우 가늘고 길게 늘어지는 스트랩(끈) 잎이 특징인 펜던트 원종. 분홍빛 열매도 관상 포인트.",
       "traits": { "leaf": "초장형 스트랩(끈) 펜던트", "texture": "준광택", "origin": "콜롬비아" },
-      "tags": ["스트랩", "펜던트", "자연종"],
-      "images": [], "sources": [], "verified": true
+      "tags": ["스트랩", "펜던트", "원종"],
+      "images": ["images/vittarifolium.jpg"], "sources": [], "verified": true
     },
     {
       "id": "pedatoradiatum",
@@ -164,10 +164,10 @@
       "abbreviations": [],
       "parents": [],
       "aka": ["Fingers / 손가락잎"],
-      "descriptionKo": "멕시코 자생. 손바닥처럼 여러 갈래로 깊게 갈라진(장상) 잎이 특징 — 벨벳 하트형 계열과 완전히 다른 인상의 자연종.",
+      "descriptionKo": "멕시코 자생. 손바닥처럼 여러 갈래로 깊게 갈라진(장상) 잎이 특징 — 벨벳 하트형 계열과 완전히 다른 인상의 원종.",
       "traits": { "leaf": "장상(손가락 모양) 갈래잎", "texture": "광택", "origin": "멕시코" },
-      "tags": ["갈래잎", "광택", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%E9%B5%9D%E6%8E%8C%E8%8A%B1%E7%87%AD20190805183546_02.jpg/960px-%E9%B5%9D%E6%8E%8C%E8%8A%B1%E7%87%AD20190805183546_02.jpg"], "sources": [], "verified": true
+      "tags": ["갈래잎", "광택", "원종"],
+      "images": ["images/pedatoradiatum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/%E9%B5%9D%E6%8E%8C%E8%8A%B1%E7%87%AD20190805183546_02.jpg/960px-%E9%B5%9D%E6%8E%8C%E8%8A%B1%E7%87%AD20190805183546_02.jpg"], "sources": [], "verified": true
     },
     {
       "id": "wendlingeri",
@@ -177,10 +177,10 @@
       "abbreviations": [],
       "parents": [],
       "aka": [],
-      "descriptionKo": "길게 늘어지는 스트랩 잎과 나선형으로 꼬인 육수꽃차례(스파딕스)가 독특한 펜던트 자연종.",
+      "descriptionKo": "길게 늘어지는 스트랩 잎과 나선형으로 꼬인 육수꽃차례(스파딕스)가 독특한 펜던트 원종.",
       "traits": { "leaf": "스트랩 펜던트", "flower": "나선형 스파딕스", "texture": "벨벳감", "origin": "중미" },
-      "tags": ["스트랩", "펜던트", "자연종"],
-      "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Anthurium_wendlingeri_kz01.jpg/960px-Anthurium_wendlingeri_kz01.jpg"], "sources": [], "verified": true
+      "tags": ["스트랩", "펜던트", "원종"],
+      "images": ["images/wendlingeri.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Anthurium_wendlingeri_kz01.jpg/960px-Anthurium_wendlingeri_kz01.jpg"], "sources": [], "verified": true
     },
     {
       "id": "splendidum",
@@ -190,10 +190,10 @@
       "abbreviations": [],
       "parents": [],
       "aka": [],
-      "descriptionKo": "에메랄드빛으로 깊게 요철(bullate)진 잎이 보석 같은 질감을 내는 자연종. 까다로운 편이라 중급 이상 수집가에게 인기.",
+      "descriptionKo": "에메랄드빛으로 깊게 요철(bullate)진 잎이 보석 같은 질감을 내는 원종. 까다로운 편이라 중급 이상 수집가에게 인기.",
       "traits": { "leaf": "요철(bullate) 하트형", "color": "에메랄드 그린", "texture": "준광택 요철", "origin": "콜롬비아" },
-      "tags": ["요철", "광택", "자연종"],
-      "images": [], "sources": [], "verified": true
+      "tags": ["요철", "광택", "원종"],
+      "images": ["images/splendidum.jpg"], "sources": [], "verified": true
     },
     {
       "id": "villenaorum",
@@ -203,10 +203,10 @@
       "abbreviations": ["villena"],
       "parents": [],
       "aka": [],
-      "descriptionKo": "페루 산마르틴(San Martín) 저지대 자생. 2019년에 기재된 비교적 최근의 자연종으로, 발견·기록에 기여한 빌레나(Villena) 가문의 이름을 땄다. 두껍지만 벨벳감이 도는 짙은 녹색 잎에 강한 은백색 잎맥이 또렷하며, 성숙하면 잎 길이가 75cm까지 자란다. 어린잎은 물방울(눈물)형이었다가 자라며 길쭉해진다. 안스리움 중 드물게 **삼각형 단면의 잎자루**를 가져 식별 포인트가 된다.",
+      "descriptionKo": "페루 산마르틴(San Martín) 저지대 자생. 2019년에 기재된 비교적 최근의 원종으로, 발견·기록에 기여한 빌레나(Villena) 가문의 이름을 땄다. 두껍지만 벨벳감이 도는 짙은 녹색 잎에 강한 은백색 잎맥이 또렷하며, 성숙하면 잎 길이가 75cm까지 자란다. 어린잎은 물방울(눈물)형이었다가 자라며 길쭉해진다. 안스리움 중 드물게 **삼각형 단면의 잎자루**를 가져 식별 포인트가 된다.",
       "traits": { "leaf": "길쭉한 하트형(어릴 땐 물방울형)", "vein": "강한 은백색 잎맥", "texture": "두껍고 준벨벳", "petiole": "삼각형 단면 잎자루", "size": "잎 길이 최대 75cm", "origin": "페루(산마르틴)" },
-      "tags": ["벨벳", "은맥", "흰잎맥", "삼각잎자루", "자연종"],
-      "images": [],
+      "tags": ["벨벳", "은맥", "흰잎맥", "삼각잎자루", "원종"],
+      "images": ["images/villenaorum.jpg"],
       "sources": [
         "https://www.anthuriumexpert.com/anthurium-villenaorum-velvet-leaf-anthurium.html",
         "https://www.exoticaesoterica.com/magazine/the-ultimate-guide-to-velvet-leaf-anthuriums"
@@ -223,8 +223,8 @@
       "aka": ["BVEP", "Black Velvet Eastern Panama", "antolakii"],
       "descriptionKo": "약어 'BVEP'는 'Black Velvet Eastern Panama'(파나마 동부의 흑색 벨벳)의 머리글자로, 정식 기재 전 임시명이었다. 이후 Vannini & Croat가 Anthurium antolakii로 정식 기재했으며, 종명은 이 식물을 발견·도입한 브리더 Rory Antolak을 기린 것이다(홀로타입은 2020년 파나마 동부에서 Thomas Croat가 채집한 것으로 알려짐). 파나마 구나얄라(Guna Yala) 고지 자생의 지생(地生) 종으로, 신엽이 핏빛 레드~거의 검정으로 전개됐다가 짙은 갈흑색 벨벳 잎으로 굳는다. papillilaminum처럼 둥근 잎자루를 가진다. 표현형 변이가 매우 커서, 거의 원형에 옅은 잎맥의 'Felix', 길쭉하고 뾰족한 잎의 'RA1' 등 폼이 있다. 컴팩트한 수형과 다크 잎으로 인기 교배 부모.",
       "traits": { "leaf": "다크 벨벳(변이 큼)", "newLeaf": "핏빛 레드~거의 검정", "color": "갈흑색~흑색", "texture": "벨벳", "petiole": "둥근 잎자루(papillilaminum 유사)", "habit": "컴팩트·지생", "origin": "파나마 구나얄라 고지", "describer": "Vannini & Croat", "etymology": "Rory Antolak 기림" },
-      "tags": ["벨벳", "다크", "자연종", "파나마", "교배부모"],
-      "images": [],
+      "tags": ["벨벳", "다크", "원종", "파나마", "교배부모"],
+      "images": ["images/antolakii.jpg"],
       "sources": [
         "https://www.nsetropicals.com/product/anthurium-bvep-antolakii/",
         "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-antolakii-aka-black-velvet-eastern-panama-bvep",
@@ -242,8 +242,8 @@
       "aka": ["besseae aff.", "Besse's Anthurium"],
       "descriptionKo": "세계적 아로이드 분류학자 Thomas B. Croat가 2005년 기재(Novon 15: 84)한 종. 종명 'besseae'는 라틴아메리카(특히 에콰도르) 탐사를 후원하고 표본 원식물을 채집한 셀비식물원(미국 사라소타)의 후원자 Libby Besse를 기려 붙였다. 자생지는 볼리비아(Kew POWO 기준 착생). 유년기에는 기름진 다크블루 신엽을 내고, 은빛 이중 윤곽의 잎맥과 다크 벨벳 표면이 다이아몬드 컷처럼 보인다. ★주의: 진짜 A. besseae는 재배계에 극히 드물고, 시중 유통의 대부분은 'besseae aff.'(affinis=besseae를 닮았으나 종이 확정되지 않음)로, 2021년경 에콰도르 농장발의 불확정 집합이다. 'Turtleback'·'Narrow'·'Flat Sinus'·'Spider'·'Blackbird' 등 클론명으로 돌며, 한 종인지 여러 종인지도 불명확하다.",
       "traits": { "leaf": "변이 큰 길쭉한 하트형", "vein": "은빛 이중 윤곽(yellow-green 톤)", "texture": "다크 벨벳", "juvenile": "기름진 다크블루 신엽", "origin": "볼리비아(진종) / 에콰도르 유통(aff.)", "describer": "Thomas B. Croat (2005)", "etymology": "Libby Besse 기림(셀비식물원 후원자)" },
-      "tags": ["벨벳", "다크", "은맥", "자연종", "aff주의", "볼리비아"],
-      "images": [],
+      "tags": ["벨벳", "다크", "은맥", "원종", "aff주의", "볼리비아"],
+      "images": ["images/besseae.jpg"],
       "sources": [
         "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60438309-2",
         "https://www.gbif.org/species/2873162",
@@ -330,7 +330,7 @@
       "descriptionKo": "besseae aff. 복합군의 선별 클론. 이름대로 거의 검정에 가까운 짙은 잎색으로 통용된다. 클론 특징은 유통 통용 수준이며 표준 정의가 아니다.",
       "traits": { "color": "거의 검정에 가까운 다크", "texture": "다크 벨벳", "group": "besseae aff." },
       "tags": ["선별종", "besseae-aff", "다크", "벨벳", "aff주의"],
-      "images": [],
+      "images": ["images/besseae-blackbird.jpg"],
       "sources": ["https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-besseae-aff"],
       "verified": false
     },
@@ -345,7 +345,7 @@
       "descriptionKo": "크리스탈리넘(crystallinum) × 클레리너비움(clarinervium) 교배. 인도네시아 육종으로 알려져 있다(여러 셀러 표기, 단 일부 자료는 산지 미표기). 이름처럼 도라야끼(둥근 화과자)를 닮아 두껍고 거의 원형에 가까운 둥근 하트형 벨벳 잎을 내며, 은빛~옅은 녹색 잎맥이 방사형으로 퍼진다. 컴팩트하게 뭉쳐 자라 어린 개체는 쿠션 같은 인상. 신엽은 옅게 나와 성숙하며 짙고 단단해진다. crystallinum의 벨벳과 clarinervium의 굵은 잎맥·단단함을 함께 물려받았다.",
       "traits": { "leaf": "거의 원형의 둥근 하트형", "vein": "은빛~옅은 녹색 방사형", "texture": "벨벳", "habit": "컴팩트·쿠션형", "origin": "인도네시아 육종(통용)" },
       "tags": ["하이브리드", "벨벳", "은맥", "둥근잎", "교배"],
-      "images": [],
+      "images": ["images/dorayaki.jpg"],
       "sources": [
         "https://www.foliage-factory.com/anthurium-dorayaki",
         "https://the-plant-guide.com/anthurium-dorayaki-care/"
@@ -363,7 +363,7 @@
       "descriptionKo": "와로쿠아넘(warocqueanum)의 다크 폼 × 파필리라미넘(papillilaminum) 교배. 원 교배자는 Karel Havlíček이며, 미국의 권위 있는 희귀 아로이드 농장 NSE Tropicals(Enid Offolter)를 통해 알려지고 유통됐다. 와로쿠아넘의 길쭉함과 파필리라미넘의 다크 벨벳·잎맥 패턴을 함께 물려받아 '두 부모의 장점을 모았다'는 평. NSE는 까다로운 두 부모와 달리 비교적 잘 자란다고 소개한다. 주의: 다크 마마는 결실이 매우 어려워(준불임으로 알려짐) 진짜 교배 실생이 드물다. 이 때문에 국내 유통품 상당수가 셀프(자가수분 실생)이거나 다른 개체가 잘못 표기돼 퍼진 것이라는 커뮤니티 의견이 있다(확정된 통계는 아님).",
       "traits": { "leaf": "길쭉한 하트형(papillilaminum 닮은꼴)", "vein": "papillilaminum형 잎맥", "texture": "다크 벨벳", "color": "흑녹색", "fertility": "결실 매우 어려움(준불임)", "creator": "Karel Havlíček", "distributor": "NSE Tropicals" },
       "tags": ["하이브리드", "다크", "벨벳", "NSE", "계통주의"],
-      "images": [],
+      "images": ["images/dark-mama.jpg"],
       "sources": [
         "https://www.nsetropicals.com/product/anthurium-dark-mama/",
         "https://aroidasia.com/products/anthurium-dark-mama-papillilaminum-x-warocqueanum",
@@ -382,7 +382,7 @@
       "descriptionKo": "시장에서 매우 흔한 교배. 두 부모의 중간 형질(잎맥 굵기·잎 질감)을 보여, 입문자가 'crystallinum인 줄 알았는데 교배였다'고 헷갈리기 쉬운 대표 사례.",
       "traits": { "leaf": "하트형(중간형질)", "vein": "흰~은맥", "texture": "벨벳" },
       "tags": ["하이브리드", "벨벳", "흰잎맥"],
-      "images": [], "sources": [], "verified": true
+      "images": ["images/magni-crystal.jpg"], "sources": [], "verified": true
     },
     {
       "id": "ace-of-spades",
@@ -395,7 +395,7 @@
       "descriptionKo": "검정에 가까운 흑색 벨벳의 길쭉한 하트(스페이드)형 잎으로 유명한 클래식 개체. 안스리움 품종등록(aroidcultivars.org) 기준 1988년 Denis Rotolante가 명명·소개했으며, 출처는 '정글에서 채집된 미상의 개체'로 **씨앗·꽃가루 부모 모두 미상**이다. 즉 야생 유래이되 정확한 교배 계통은 끝내 밝혀지지 않았다(자가수분 실생 추정설 있음). 이름은 잎의 색과 스페이드 모양에서 유래.",
       "traits": { "leaf": "길쭉한 하트(스페이드)형", "color": "흑색에 가까운 다크", "texture": "벨벳", "originator": "Denis Rotolante (1988)", "parentage": "미상(야생 채집 유래)" },
       "tags": ["하이브리드", "다크", "벨벳", "클래식", "계통미상"],
-      "images": [],
+      "images": ["images/ace-of-spades.png"],
       "sources": [
         "https://www.aroidcultivars.org/aroid-cultivars/anthurium/ace-of-spades",
         "https://www.nsetropicals.com/product/anthurium-ace-of-spades-2/"
@@ -414,7 +414,7 @@
       "descriptionKo": "플로리다 브리더 닥블락(Dr. Jeff Block)의 대표 선별 개체로, 그의 아내 이름을 땄다. 콜롬비아산 Anthurium magnificum 품종에서 출발해 4세대에 걸쳐 수천 개체를 선별하며 색과 세력을 다듬었고, 원본 'Michelle' 개체를 공식 조직배양(TC) 클론으로 고정해 유전적으로 균일하게 보급한다. 2022년 TPIE에서 'Best New Flowering Plant'를 수상. 벨벳 하트형 잎이 버건디·퍼플로 전개됐다가 짙은 녹색으로 성숙하며 잎맥은 흰색~분홍색 대비, 잎 뒷면은 라벤더→옅은 녹색으로 변한다.",
       "traits": { "leaf": "하트형", "vein": "흰~분홍 잎맥", "texture": "벨벳", "newLeaf": "버건디·퍼플 전개", "underside": "라벤더→옅은 녹색", "size": "초장 약 30~60cm", "origin": "A. magnificum 품종 4세대 선별", "propagation": "공식 조직배양(TC) 클론", "breeder": "닥블락(Dr. Jeff Block)" },
       "tags": ["선별종", "벨벳", "신엽컬러", "닥블락", "magnificum계열"],
-      "images": [],
+      "images": ["images/michelle.png"],
       "sources": [
         "https://growtropicals.com/products/anthurium-michelle-by-docblock",
         "https://www.provenwinners.com/plants/anthurium/docblock-michelle-velvet-leaf-anthurium-anthurium-hybrid"
@@ -433,7 +433,7 @@
       "descriptionKo": "닥블락(Dr. Jeff Block)의 F4 선별 개체(2022). 출처상 씨방친은 Anthurium magnificum, 화분친은 붉은 잎을 내는 Anthurium crystallinum 품종으로, 매그니피컴 라인에 crystallinum이 섞인 계통을 선별해 고정한 클론이다. 신엽이 선명한 퍼플~레드로 전개됐다가 짙은 녹색으로 성숙하며, 레드·실버가 섞인 굵은 잎맥과 잎자루 부착부의 붉은 'red-eye'가 식별 포인트. 두껍고 벨벳질인 잎. '미쉘 × 자라' 교배의 부모로도 유명하다.",
       "traits": { "leaf": "하트형", "vein": "레드·실버 잎맥", "texture": "두껍고 벨벳", "newLeaf": "퍼플~레드 전개", "feature": "잎자루 부착부 'red-eye'", "origin": "씨방친 magnificum × 화분친 붉은 crystallinum 품종 (F4 선별)", "breeder": "닥블락(Dr. Jeff Block)" },
       "tags": ["선별종", "벨벳", "신엽컬러", "닥블락", "magnificum계열"],
-      "images": [],
+      "images": ["images/zara.jpg"],
       "sources": [
         "https://anthuriumsbydocblock.com/anthurium-zara/",
         "https://growtropicals.com/products/docblock-dark-handsome-9-x-zara-14-by-docblock%C2%AE"
@@ -451,7 +451,7 @@
       "descriptionKo": "닥블락(Dr. Jeff Block)의 두 인기 개체 미쉘 × 자라 교배. 신엽이 버건디·퍼플에서 레드·브라운에 이르는 강렬한 색으로 전개됐다가, 성숙하며 벨벳질 짙은 녹색으로 변하고 앞·뒷면에 잎맥 대비가 또렷하게 드러난다. 다시 다른 개체와의 추가 교배(F2 등) 부모로도 널리 쓰인다.",
       "traits": { "leaf": "하트형", "vein": "앞뒤로 또렷한 잎맥 대비", "texture": "벨벳", "newLeaf": "버건디·퍼플~레드·브라운 전개", "color": "성숙 시 짙은 녹색", "breeder": "닥블락(Dr. Jeff Block)" },
       "tags": ["하이브리드", "교배", "벨벳", "신엽컬러", "닥블락"],
-      "images": [],
+      "images": ["images/michelle-x-zara.jpg"],
       "sources": [
         "https://www.carnivero.com/products/anthurium-zara-x-michelle-x-doc-block-f2",
         "https://growtropicals.com/products/anthurium-zara-x-michelle-x-luxurians"
@@ -470,7 +470,7 @@
       "descriptionKo": "'Forget Sherman'이 아니라 **Fort Sherman**(포트 셔먼)으로, 파나마 운하지대의 옛 미군 기지이자 식물 채집지에서 유래한 이름. 그 지역에서 야생 채집된 **파필리라미넘(papillilaminum) 선별 클론**으로, 짙은 다크 벨벳 잎이 특징이며 RLFS(=FSxRL) 같은 다크 라인 교배의 부모로 쓰인다. (셀러 다수가 papillilaminum 폼으로 표기하나, 단일 botanical 등록 기준은 아니므로 계통 표기는 트레이드 통용 기준.)",
       "traits": { "texture": "다크 벨벳", "origin": "파나마(포트 셔먼, 운하지대)", "lineage": "papillilaminum 선별 클론(통용)" },
       "tags": ["선별종", "papillilaminum", "다크", "벨벳", "파나마"],
-      "images": [],
+      "images": ["images/fs.jpg"],
       "sources": [
         "https://www.protoleaf.ca/products/anthurium-fs-rl",
         "https://young-botanist.com/en/products/anthurium-rlfs-ralph-lynam-x-fort-sherman"
@@ -489,7 +489,7 @@
       "descriptionKo": "재배가 Ralph Lynam의 이름을 딴 **파필리라미넘(papillilaminum) 선별 클론**. 강한 다크 벨벳 잎과 정제된 형태로, 안스리움 다크 벨벳 교배사에서 중요한 모본으로 꼽힌다. FSxRL(=RLFS) 교배의 한쪽 부모. (papillilaminum 폼 표기는 트레이드 통용 기준.)",
       "traits": { "texture": "강한 다크 벨벳", "lineage": "papillilaminum 선별 클론(통용)", "note": "교배 모본으로 중요" },
       "tags": ["선별종", "papillilaminum", "다크", "벨벳"],
-      "images": [],
+      "images": ["images/rl.jpg"],
       "sources": [
         "https://happiestplants.com/products/anthurium-rlfs-menace-black-x-ralph-lynam",
         "https://greenfelicities.com/a-papillilaminum-rlfs-x-carlablackiae/"
@@ -507,10 +507,155 @@
       "descriptionKo": "포트 셔먼(FS) × 랄프 라이넘(RL) 교배. 두 부모가 모두 파필리라미넘(papillilaminum) 선별 클론이라, 사실상 papillilaminum 라인브리딩에 가깝다. 초다크(거의 흑색) 잎에 선명한 레드 잎맥 대비가 특징. 'RLFS'로도 불린다. 입문자가 약어를 보고 가장 막막해하는 대표 사례 — 검색창에 'FSxRL'/'RLFS'를 치거나 아래 부모를 클릭해 계보를 따라가 보세요.",
       "traits": { "leaf": "길쭉한 하트형", "color": "초다크(거의 흑색)", "vein": "선명한 레드 잎맥", "texture": "벨벳", "lineage": "papillilaminum × papillilaminum(선별 클론 교배)" },
       "tags": ["하이브리드", "교배", "papillilaminum", "다크", "레드맥", "벨벳"],
-      "images": [],
+      "images": ["images/fsxrl.png"],
       "sources": [
         "https://www.protoleaf.ca/products/anthurium-fs-rl",
         "https://happiestplants.com/products/anthurium-rlfs-menace-black-x-ralph-lynam"
+      ],
+      "verified": true
+    },
+    {
+      "id": "leucostachyum",
+      "displayName": "레우코스타키움",
+      "scientificName": "Anthurium leucostachyum (= A. versicolor)",
+      "type": "species",
+      "abbreviations": [],
+      "parents": [],
+      "aka": ["versicolor", "베르시콜로르"],
+      "descriptionKo": "에콰도르에서 활동한 식물학자 Luis Sodiro가 기재한 종. GBIF 기준 현재는 Anthurium versicolor의 이명(synonym)으로 처리되지만, 재배·교배 기록에는 'leucostachyum' 이름으로 더 자주 등장한다. Mike Bush의 클래식 교배 '서커스 피넛'(dressleri × leucostachyum)의 부모로 유명하며, 시중 재배 정보가 드물어 본 도감 등재는 계보 연결이 주목적이다.",
+      "traits": { "describer": "Luis Sodiro", "taxonomy": "현 분류상 A. versicolor의 이명(GBIF)", "note": "Circus Peanuts의 화분친으로 알려짐" },
+      "tags": ["원종", "교배부모", "이명주의"],
+      "images": ["images/leucostachyum.jpg"],
+      "sources": [
+        "https://www.gbif.org/species/118464143",
+        "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-circus-peanuts"
+      ],
+      "verified": true
+    },
+    {
+      "id": "night-queen",
+      "displayName": "나이트 퀸",
+      "scientificName": "Anthurium 'Night Queen'",
+      "type": "hybrid",
+      "abbreviations": [],
+      "parents": ["papillilaminum", "luxurians"],
+      "aka": ["Night Queen"],
+      "descriptionKo": "파필리라미넘(papillilaminum) × 럭셔리안스(luxurians) 교배. 다크 마마가 와로쿠아넘 계열의 다크 라인이라면, 나이트 퀸은 파필의 다크 벨벳에 럭셔리안스의 요철(bullate) 질감을 더하는 데 집중한 라인이다. 신엽이 붉은빛으로 나와 점차 거의 검정으로 짙어지는 개체가 좋은 폼으로 꼽힌다. ★주의: 같은 조합(papi × lux) 실생이라도 폼 편차가 커서 모든 개체가 '나이트 퀸' 급으로 통하지는 않으며, 셀러들이 발색 좋은 개체를 선별해 이 이름으로 유통하는 경향이 있다.",
+      "traits": { "leaf": "하트형(요철+벨벳 중간형질)", "newLeaf": "붉은 신엽 → 흑녹색", "texture": "벨벳 + 약한 요철", "lineage": "papillilaminum × luxurians" },
+      "tags": ["하이브리드", "교배", "다크", "벨벳", "요철", "계통주의"],
+      "images": ["images/night-queen.png"],
+      "sources": [
+        "https://www.protoleaf.ca/products/anthurium-night-queen",
+        "https://plantbuys.com/products/anthurium-night-queen"
+      ],
+      "verified": true
+    },
+    {
+      "id": "ravens-heart",
+      "displayName": "레이븐스 하트",
+      "scientificName": "Anthurium 'Raven's Heart'",
+      "type": "hybrid",
+      "abbreviations": [],
+      "parents": ["papillilaminum", "ace-of-spades"],
+      "aka": ["Raven's Heart"],
+      "descriptionKo": "파필리라미넘(papillilaminum) × 에이스 오브 스페이드(AoS) 교배. AoS의 넓고 극적인 스페이드형 다크 하트와 파필의 짙은 벨벳 질감을 합쳐, 크면서도 촉감이 도드라지는 잎을 낸다. 성숙 시 잎 길이 40cm를 넘기도 한다. AoS 자체가 계통 미상의 클래식 개체라, 레이븐스 하트의 위 계보도 AoS에서 끊긴다.",
+      "traits": { "leaf": "넓은 스페이드형 하트", "color": "흑녹색 다크", "texture": "다크 벨벳", "size": "성숙 잎 40cm+", "lineage": "papillilaminum × 'Ace of Spades'" },
+      "tags": ["하이브리드", "교배", "다크", "벨벳", "AoS계열"],
+      "images": ["images/ravens-heart.jpg"],
+      "sources": [
+        "https://www.carnivero.com/products/anthurium-ravens-heart-papillilaminum-x-ace-of-spades-car-0333",
+        "https://www.foliage-factory.com/anthurium-papillilaminum-x-ace-of-spades"
+      ],
+      "verified": true
+    },
+    {
+      "id": "circus-peanuts",
+      "displayName": "서커스 피넛",
+      "scientificName": "Anthurium 'Circus Peanuts'",
+      "type": "hybrid",
+      "abbreviations": [],
+      "parents": ["dressleri", "leucostachyum"],
+      "aka": ["Circus Peanuts", "Mike's Goliath"],
+      "descriptionKo": "드레슬레리(dressleri) × 레우코스타키움(leucostachyum, 현 분류상 versicolor) 교배로, Mike Bush가 1980년대 초 작출한 클래식 하이브리드. Selby 식물원은 작출자를 기려 'Mike's Goliath'로 명명했지만, Tom Croat가 꽃에서 나는 싸구려 인공 바나나향에 빗대 농담처럼 부른 'Circus Peanuts'(미국의 바나나향 과자)가 굳어져 통용된다. 부모인 원종 드레슬레리가 희귀한 만큼 시중에서 쉽게 보기 어려운 개체다.",
+      "traits": { "texture": "다크 벨벳", "flower": "인공 바나나향 꽃(이름의 유래)", "creator": "Mike Bush (1980년대 초)", "lineage": "dressleri × leucostachyum(versicolor)" },
+      "tags": ["하이브리드", "교배", "다크", "벨벳", "클래식"],
+      "images": ["images/circus-peanuts.jpg"],
+      "sources": [
+        "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-circus-peanuts",
+        "https://www.nsetropicals.com/product/anthurium-circus-peanuts-rooted-division/"
+      ],
+      "verified": true
+    },
+    {
+      "id": "dark-phoenix",
+      "displayName": "다크 피닉스",
+      "scientificName": "Anthurium 'Dark Phoenix'",
+      "type": "hybrid",
+      "abbreviations": [],
+      "parents": [],
+      "aka": ["Dark Phoenix"],
+      "descriptionKo": "흔히 '파필리라미넘 × 드레슬레리'로 유통되는 다크 벨벳 하이브리드명. ★계통 논쟁: 4aroids는 드레슬레리 관여를 보여주는 표현형 증거(별 모양 단면 잎자루 등)가 자가수분 후대에서도 나타나지 않는다며, 사실상 papillilaminum 폼 — 그리고 셀러·수집가의 통용 탓에 사실상 품종명처럼 쓰이는 트레이드명 — 으로 추정한다. 인도네시아발 '다크 피닉스'는 흔하지만, 원종 드레슬레리와 교배한 라인(TC782 등으로 불림)은 보기 어렵다는 커뮤니티 평. 본 도감은 추측 금지 원칙에 따라 부모를 비워 둔다.",
+      "traits": { "leaf": "길쭉한 하트형(papillilaminum 닮은꼴)", "texture": "다크 벨벳", "parentage": "논쟁 중(papi × dressleri 표기 vs 순수 papillilaminum 폼 추정)" },
+      "tags": ["하이브리드", "다크", "벨벳", "계통논쟁", "계통주의"],
+      "images": ["images/dark-phoenix.jpg"],
+      "sources": [
+        "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-dark-phoenix",
+        "https://www.foliage-factory.com/anthurium-dark-phoenix"
+      ],
+      "verified": true
+    },
+    {
+      "id": "red-crystallinum",
+      "displayName": "레드 크리스탈리넘",
+      "scientificName": "Anthurium 'Red Crystallinum'",
+      "type": "hybrid",
+      "abbreviations": [],
+      "parents": [],
+      "aka": ["Red Crystallinum"],
+      "descriptionKo": "남플로리다 브리더 Tim Anderson의 라인에서 나온, 신엽이 강렬한 레드로 전개되는 인기 개체군. 정확한 교배 레시피는 비공개로, crystallinum·magnificum·dressleri가 관여한 복합 교배로 추정된다(magnificum 관여는 비교적 널리 받아들여짐). 신엽은 레드 → 퍼플 → 짙은 녹색으로 변하며 잎맥 대비가 뚜렷하다. ★주의: 이름과 달리 '붉은 crystallinum 원종'이 아니라 하이브리드 계열명에 가깝다. 계보가 비공개라 본 도감은 부모를 비워 둔다.",
+      "traits": { "leaf": "하트형", "newLeaf": "레드 → 퍼플 → 짙은 녹색", "vein": "뚜렷한 잎맥 대비", "texture": "벨벳", "breeder": "Tim Anderson 라인(남플로리다)", "parentage": "비공개(crystallinum·magnificum·dressleri 관여 추정)" },
+      "tags": ["하이브리드", "벨벳", "신엽컬러", "계통미상", "계통주의"],
+      "images": ["images/red-crystallinum.jpg"],
+      "sources": [
+        "https://www.carnivero.com/products/anthurium-red-crystallinum",
+        "https://www.alltheplantbabies.com/anthuriums/anthurium-hybrid-red-crystallinum-nse-tropicals-line-x-luxurians"
+      ],
+      "verified": true
+    },
+    {
+      "id": "rvdp",
+      "displayName": "RVDP (레드 베인 다크 피닉스)",
+      "scientificName": "Anthurium 'Red Vein Dark Phoenix'",
+      "type": "hybrid",
+      "abbreviations": ["RVDP"],
+      "parents": ["papillilaminum", "ace-of-spades"],
+      "aka": ["Red Vein Dark Phoenix", "레드베인 다크피닉스"],
+      "descriptionKo": "태국 Siam Flora의 브리더 Jeera Jukmongkol이 2019년 작출한 교배로, 씨방친은 papillilaminum Variegata(무늬 파필), 화분친은 'Ace of Spades'다. 이름의 신호처럼 다크 벨벳 잎 위로 도드라지는 레드 잎맥이 시그니처. ★이름 주의: 'Dark Phoenix'와는 유전적 관련이 전혀 없고, 외형 유사성에서 온 마케팅명이다(Thai Exotic이 시장화). 같은 교배 한 배에서 'Night Dragon', 'Red Dark Phoenix'(RDP), 'Bullion', 'Peach Lava' 등 형제 클론들이 함께 명명됐다. 레이븐스 하트와 같은 조합(papillilaminum × AoS)이지만 별개의 교배·별개의 클론이라는 점도 입문자가 헷갈리기 쉬운 포인트.",
+      "traits": { "vein": "레드 잎맥(시그니처)", "texture": "다크 벨벳", "creator": "Jeera Jukmongkol (Siam Flora, 태국, 2019)", "lineage": "papillilaminum Variegata × 'Ace of Spades'", "siblings": "Night Dragon · RDP · Bullion · Peach Lava (동배 클론)" },
+      "tags": ["하이브리드", "교배", "다크", "벨벳", "레드맥", "AoS계열", "이름주의"],
+      "images": ["images/rvdp.png"],
+      "sources": [
+        "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-red-vein-dark-phoenix-rvdp",
+        "https://happiestplants.com/blogs/news/anthurium-red-vein-dark-phoenix-rvdp-a-botanical-masterpiece"
+      ],
+      "verified": true
+    },
+    {
+      "id": "carlablackiae",
+      "displayName": "칼라블랙키",
+      "scientificName": "Anthurium carlablackiae",
+      "type": "species",
+      "abbreviations": ["carla"],
+      "parents": [],
+      "aka": ["carlablackiae", "칼라블라키에"],
+      "descriptionKo": "파나마 거주 헬리코니아 전문가 Carla Black이 2009년 파나마 푸에르토 오발디아(Puerto Obaldía) 인근에서 발견했고, Thomas Croat & Orlando Ortiz가 2020년 정식 기재(Phytotaxa 467(1): 10)하며 발견자를 기려 명명한 비교적 새로운 원종. 자생 범위는 파나마~콜롬비아. 거의 검정에 가까운 다크 벨벳 잎에 옅은 은빛 잎맥이 또렷하고, 신엽은 분홍기를 띠며, 녹적색~버건디의 능선 있는 잎자루와 컴팩트한 수형(잎자루를 수평 이하로 드리움)이 식별 포인트. papillilaminum·dressleri와 함께 다크 벨벳 교배의 인기 부모로, dressleri × carlablackiae, carlablackiae × luxurians 등 교배가 활발하다. 'AU1', 'Marcella' 같은 클론 표기로도 유통된다.",
+      "traits": { "leaf": "다크 벨벳 하트형(거의 흑색)", "vein": "옅은 은빛 잎맥", "newLeaf": "분홍기 도는 신엽", "petiole": "능선 있는 녹적색~버건디 잎자루", "habit": "컴팩트(잎자루 수평 이하)", "origin": "파나마(푸에르토 오발디아)~콜롬비아", "describer": "Croat & O.Ortiz (2020, Phytotaxa)", "etymology": "발견자 Carla Black 기림" },
+      "tags": ["벨벳", "다크", "은맥", "원종", "파나마", "교배부모"],
+      "images": ["images/carlablackiae.jpg"],
+      "sources": [
+        "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77212524-1",
+        "https://4aroids.de/en/blogs/4aroids-encyclopedia-anthuriums/anthurium-carlablackiae",
+        "https://granthuriums.com/blogs/species-profiles/anthurium-carlablackiae"
       ],
       "verified": true
     }

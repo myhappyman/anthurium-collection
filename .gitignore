@@ -1,1 +1,16 @@
 .DS_Store
+.next/
+node_modules/
+.env
+.env.local
+.env.*.local
+coverage/
+*.tsbuildinfo
+supabase/.branches/
+supabase/.temp/
+
+# 비공개 입수 기록·출처 증빙 (저장소에 올리려면 이 줄을 지운다)
+/private/
+
+# 보유 개체 원본 사진·출처 증빙 (업로드 원본, 저장소에 올리지 않음)
+/docs/ref/

@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>안스리움 컬렉션 — 자연종·선별종·하이브리드 정리</title>
+  <title>안스리움 컬렉션 — 원종·선별종·하이브리드 정리</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header">
     <h1>안스리움 컬렉션</h1>
-    <p class="tagline">자연종 · 선별종 · 하이브리드를 계보와 약어로 정리합니다</p>
+    <p class="tagline">원종 · 선별종 · 하이브리드를 계보와 약어로 정리합니다</p>
   </header>
 
   <section class="toolbar">
     <input id="search" type="search" placeholder="이름·학명·태그·약어 검색 (예: 퀸, crystallinum, FSxRL)" autocomplete="off" />
     <div id="type-filters" class="filters"></div>
-    <button id="open-graph" class="graph-open-btn">🌳 전체 계보</button>
+    <a href="lineage.html" class="graph-open-btn">🗺 계보 캔버스</a>
   </section>
 
   <main>
@@ -38,15 +38,6 @@
     <div class="tree-card" role="dialog" aria-modal="true">
       <button class="detail-close" data-close-tree aria-label="닫기">×</button>
       <div id="tree-body"></div>
-    </div>
-  </div>
-
-  <!-- 전체 계보 그래프 오버레이 -->
-  <div id="graph" class="tree-overlay" hidden>
-    <div class="detail-backdrop" data-close-graph></div>
-    <div class="tree-card graph-card" role="dialog" aria-modal="true">
-      <button class="detail-close" data-close-graph aria-label="닫기">×</button>
-      <div id="graph-body"></div>
     </div>
   </div>
 

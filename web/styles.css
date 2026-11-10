@@ -154,8 +154,10 @@ main { max-width: 1040px; margin: 1.6rem auto; padding: 0 1.2rem; }
 .lineage h4 { margin: 0 0 0.5rem; font-size: 0.9rem; color: var(--muted); }
 .lineage-links { display: flex; gap: 0.5rem; flex-wrap: wrap; }
 .lineage-link {
+  display: inline-block;
   padding: 0.35rem 0.7rem; border-radius: 8px; cursor: pointer;
   background: var(--panel); border: 1px solid var(--line); color: var(--text);
+  text-decoration: none; font-size: 0.85rem;
 }
 .lineage-link:hover { border-color: var(--accent); }
 .traits { width: 100%; border-collapse: collapse; margin-top: 0.8rem; }
@@ -225,8 +227,9 @@ main { max-width: 1040px; margin: 1.6rem auto; padding: 0 1.2rem; }
 .tnode.type-hybrid { border-left: 4px solid #9fc0ff; }
 .tnode.type-selection { border-left: 4px solid #d7a8ff; }
 
-/* 전체 계보 그래프 */
+/* 계보 캔버스 진입 링크 (전체 계보 시각화는 lineage.html로 이동) */
 .graph-open-btn {
+  display: inline-block;
   padding: 0.45rem 0.95rem;
   border-radius: 999px;
   border: 1px solid var(--accent-dim);
@@ -234,26 +237,9 @@ main { max-width: 1040px; margin: 1.6rem auto; padding: 0 1.2rem; }
   color: var(--accent);
   cursor: pointer;
   font-size: 0.85rem;
+  text-decoration: none;
 }
 .graph-open-btn:hover { border-color: var(--accent); background: var(--panel-2); }
-
-.graph-card { width: min(96vw, 1280px); }
-#graph-body > h3 { margin: 0 0 0.3rem; }
-.graph-scroll { overflow: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--panel-2); }
-.legend-cross { color: #9fc0ff; }
-.legend-selection { color: #d7a8ff; }
-
-.gedge { fill: none; stroke-width: 1.5; opacity: 0.75; }
-.gedge-cross { stroke: #5b76b8; }
-.gedge-selection { stroke: #8a5bb8; }
-
-.gnode { cursor: pointer; }
-.gnode rect { fill: var(--panel); stroke: var(--line); transition: stroke 0.12s ease; }
-.gnode text { fill: var(--text); font-size: 12px; font-family: inherit; }
-.gnode:hover rect { stroke: var(--accent); }
-.gnode.type-species rect { stroke: var(--accent-dim); }
-.gnode.type-hybrid rect { stroke: #3a4a6b; }
-.gnode.type-selection rect { stroke: #5a3a6b; }
 
 .site-footer { text-align: center; color: var(--muted); padding: 2rem 1rem; font-size: 0.85rem; }
 code { background: var(--panel-2); padding: 0.1rem 0.35rem; border-radius: 5px; }

@@ -1,0 +1,151 @@
+/* ── 계보 캔버스 페이지 (lineage.html 전용) ───────────────── */
+.lineage-page {
+  overflow: hidden; height: 100vh;
+  /* 팬 드래그 중 노드 텍스트·UI가 선택되지 않도록. 패널·검색만 아래서 예외 */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.panel, #canvas-search {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+#canvas {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  display: block;
+  touch-action: none;       /* 브라우저 기본 스크롤/핀치 대신 포인터 이벤트로 직접 처리 */
+  cursor: grab;
+}
+#canvas:active { cursor: grabbing; }
+#dots circle { fill: #20291f; }
+
+/* ── 상단바 ── */
+.canvas-topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 5;
+  display: flex; gap: 0.9rem; align-items: center; flex-wrap: wrap;
+  padding: 0.65rem 1rem;
+  background: rgba(15, 20, 16, 0.84);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.canvas-topbar h1 { margin: 0; font-size: 1.05rem; letter-spacing: -0.01em; }
+.back-link { color: var(--accent); text-decoration: none; font-size: 0.9rem; white-space: nowrap; }
+.back-link:hover { text-decoration: underline; }
+
+.search-box { position: relative; flex: 1 1 240px; max-width: 400px; }
+#canvas-search {
+  width: 100%;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  font-size: 0.9rem;
+}
+#canvas-search:focus { outline: 2px solid var(--accent-dim); }
+#search-results {
+  position: absolute; top: 110%; left: 0; right: 0; z-index: 6;
+  margin: 0; padding: 0.3rem; list-style: none;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px;
+  max-height: 300px; overflow: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+#search-results li {
+  display: flex; gap: 0.5rem; align-items: baseline; justify-content: space-between;
+  padding: 0.45rem 0.6rem; border-radius: 7px; cursor: pointer;
+}
+#search-results li:hover { background: var(--panel-2); }
+#search-results .sci { color: var(--muted); font-style: italic; font-size: 0.72rem; }
+
+.legend { display: flex; gap: 0.4rem; }
+.legend-toggle {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  padding: 0.4rem 0.8rem; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--panel);
+  color: var(--text); font-size: 0.8rem; cursor: pointer;
+}
+.legend-toggle:not(.on) { opacity: 0.45; }
+.legend-toggle:not(.on) { text-decoration: line-through; }
+.swatch { display: inline-block; width: 16px; height: 4px; border-radius: 2px; }
+.swatch-cross { background: #5b76b8; }
+.swatch-selection { background: #8a5bb8; }
+
+/* ── 줌 컨트롤 ── */
+.zoom-controls {
+  position: fixed; right: 1rem; bottom: 3.4rem; z-index: 5;
+  display: flex; flex-direction: column; gap: 0.4rem;
+}
+.zoom-controls button {
+  width: 42px; height: 42px;
+  border-radius: 12px; border: 1px solid var(--line);
+  background: var(--panel); color: var(--text);
+  font-size: 1rem; cursor: pointer;
+}
+.zoom-controls button:hover { border-color: var(--accent); }
+.zoom-label {
+  position: fixed; right: 1.1rem; bottom: 1rem; z-index: 5;
+  color: var(--muted); font-size: 0.75rem; font-variant-numeric: tabular-nums;
+}
+.canvas-hint {
+  position: fixed; left: 1rem; bottom: 0.55rem; z-index: 5;
+  color: var(--muted); font-size: 0.75rem; margin: 0;
+  max-width: 60vw;
+}
+
+/* ── 우측 상세 패널 ── */
+.panel {
+  position: fixed; top: 70px; right: 0.9rem; bottom: 0.9rem; z-index: 5;
+  width: min(360px, calc(100vw - 1.8rem));
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.1rem 1.3rem;
+  overflow: auto;
+  box-shadow: 0 14px 44px rgba(0, 0, 0, 0.5);
+}
+.panel h2 { margin: 0.1rem 0 0.15rem; font-size: 1.2rem; }
+.panel .sci { color: var(--muted); font-style: italic; font-size: 0.85rem; }
+.panel .meta { display: flex; gap: 0.35rem; flex-wrap: wrap; margin-top: 0.5rem; }
+.panel-desc { font-size: 0.85rem; }
+.panel-foot { margin-bottom: 0; }
+.panel-foot a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+.panel-foot a:hover { text-decoration: underline; }
+
+/* ── 노드/간선 ── */
+.gedge {
+  fill: none; stroke-width: 1.6; opacity: 0.7;
+  transition: opacity 0.15s ease, stroke-width 0.15s ease;
+}
+.gedge-cross { stroke: #5b76b8; }
+.gedge-selection { stroke: #8a5bb8; }
+
+.gnode { cursor: pointer; transition: opacity 0.15s ease; }
+.gnode rect { fill: var(--panel); stroke: var(--line); stroke-width: 1.2; transition: stroke 0.12s ease; }
+.gnode .gname { fill: var(--text); font-size: 13px; font-weight: 600; }
+.gnode .gsci { fill: var(--muted); font-size: 9.5px; font-style: italic; }
+.gnode .gwarn { font-size: 11px; }
+.gnode:hover rect { stroke: var(--accent); }
+.gnode.type-species rect { stroke: var(--accent-dim); }
+.gnode.type-hybrid rect { stroke: #3a4a6b; }
+.gnode.type-selection rect { stroke: #5a3a6b; }
+.glabel { fill: #43544a; font-size: 12px; letter-spacing: 0.08em; }
+
+/* ── 혈통 하이라이트: 선택 시 혈통 밖은 흐리게 ── */
+.has-selection .gnode { opacity: 0.18; }
+.has-selection .gnode.in-lineage { opacity: 1; }
+.has-selection .gedge { opacity: 0.06; }
+.has-selection .gedge.on-path { opacity: 0.95; stroke-width: 2.4; }
+.gnode.focal rect {
+  stroke: var(--accent); stroke-width: 2;
+  filter: drop-shadow(0 0 7px rgba(125, 220, 143, 0.45));
+}
+
+/* 범례 토글로 간선 종류 숨김 */
+#canvas.hide-cross .gedge-cross,
+#canvas.hide-selection .gedge-selection { display: none; }
+
+@media (max-width: 640px) {
+  .canvas-topbar h1 { display: none; }
+  .panel { top: auto; max-height: 46vh; }
+}

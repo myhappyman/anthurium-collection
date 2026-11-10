@@ -1,0 +1,38 @@
+{
+  "name": "anthurium-collection",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --disable-warning=ExperimentalWarning --experimental-strip-types --test src/features/lineage/lineage-graph.test.ts src/lib/csv.test.ts src/lib/private-media-path.test.ts src/lib/qr/qr-code.test.ts",
+    "test:watch": "node --disable-warning=ExperimentalWarning --experimental-strip-types --test --watch src/features/lineage/lineage-graph.test.ts",
+    "db:types": "supabase gen types typescript --local > src/types/database.types.ts",
+    "catalog:import": "node --disable-warning=ExperimentalWarning --experimental-strip-types scripts/import-catalog.ts",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "latest",
+    "supabase": "latest",
+    "typescript": "latest"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}

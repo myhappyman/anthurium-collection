@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>계보 캔버스 — 안스리움 컬렉션</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="lineage.css" />
+</head>
+<body class="lineage-page">
+  <header class="canvas-topbar">
+    <a class="back-link" href="index.html">← 도감</a>
+    <h1>계보 캔버스</h1>
+    <div class="search-box">
+      <input id="canvas-search" type="search" placeholder="개체 검색 후 이동 (예: 다크 마마, FSxRL)" autocomplete="off" />
+      <ul id="search-results" hidden></ul>
+    </div>
+    <div class="legend">
+      <button id="toggle-cross" class="legend-toggle on" title="교배 간선 표시/숨김">
+        <span class="swatch swatch-cross"></span>교배
+      </button>
+      <button id="toggle-selection" class="legend-toggle on" title="선별 간선 표시/숨김">
+        <span class="swatch swatch-selection"></span>선별
+      </button>
+    </div>
+  </header>
+
+  <svg id="canvas" role="application" aria-label="안스리움 계보 무한 캔버스">
+    <defs>
+      <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
+        <circle cx="1.5" cy="1.5" r="1.5" />
+      </pattern>
+      <!-- 노드 썸네일 둥근 모서리 클립 (모든 노드에서 이미지 위치가 같아 하나만 공유) -->
+      <clipPath id="thumb-clip"><rect x="7" y="7" width="40" height="40" rx="9" /></clipPath>
+    </defs>
+    <rect id="dots-bg" width="100%" height="100%" fill="url(#dots)" />
+    <g id="world"></g>
+  </svg>
+
+  <div class="zoom-controls">
+    <button id="zoom-in" title="확대 (+)">＋</button>
+    <button id="zoom-out" title="축소 (−)">－</button>
+    <button id="zoom-fit" title="전체 보기 (0)">⤢</button>
+    <button id="zoom-100" title="100%">1:1</button>
+  </div>
+  <div id="zoom-label" class="zoom-label">100%</div>
+
+  <aside id="panel" class="panel" hidden>
+    <button id="panel-close" class="detail-close" aria-label="닫기">×</button>
+    <div id="panel-body"></div>
+  </aside>
+
+  <p class="canvas-hint">드래그 = 이동 · 휠/핀치 = 줌 · 노드 클릭 = 혈통 강조 · 빈 곳 클릭 = 해제</p>
+
+  <script src="lineage.js"></script>
+</body>
+</html>

@@ -9,7 +9,7 @@ const selectionIndex = new Map(); // 원종 id -> [선별 클론 taxon, ...]
 let activeType = "all";
 
 const TYPE_LABELS = {
-  species: "자연종",
+  species: "원종",
   selection: "선별종",
   hybrid: "하이브리드",
 };
@@ -39,13 +39,13 @@ async function init() {
   document.getElementById("tree").addEventListener("click", (e) => {
     if (e.target.hasAttribute("data-close-tree")) closeTree();
   });
-  document.getElementById("graph").addEventListener("click", (e) => {
-    if (e.target.hasAttribute("data-close-graph")) closeGraph();
-  });
-  document.getElementById("open-graph").onclick = openGraph;
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") { closeGraph(); closeTree(); closeDetail(); }
+    if (e.key === "Escape") { closeTree(); closeDetail(); }
   });
+
+  // 계보 캔버스 등에서 index.html#<id> 로 진입하면 해당 개체 상세를 바로 연다.
+  const hashId = decodeURIComponent(location.hash.slice(1));
+  if (hashId && byId.has(hashId)) openDetail(hashId);
 }
 
 // 한 번 순회하며 파생 인덱스(역방향 계보 포함)를 만들어 둔다.
@@ -199,8 +199,11 @@ function openDetail(id) {
     ${lineageBlock("이 개체를 부모로 쓴 자식들", children)}
     ${lineageBlock("선별 기준 종 (이 클론의 원종)", selectionParent ? [selectionParent] : [])}
     ${lineageBlock("이 종의 선별 클론", selectionClones)}
-    ${(parents.length || children.length || selectionParent || selectionClones.length)
-      ? `<div class="tree-actions"><button id="open-tree-btn">🌳 계보 트리 보기</button></div>` : ""}
+    <div class="tree-actions">
+      ${(parents.length || children.length || selectionParent || selectionClones.length)
+        ? `<button id="open-tree-btn">🌳 계보 트리 보기</button>` : ""}
+      <a class="lineage-link" href="lineage.html?focus=${encodeURIComponent(t.id)}">🗺 계보 캔버스에서 보기</a>
+    </div>
     ${traitsTable(t.traits)}
   `;
 
@@ -290,121 +293,7 @@ function treeNode(id, nextFn, visited, isRoot, edge) {
   return html + "</li>";
 }
 
-// ── 전체 계보 그래프 ────────────────────────────────────────
-// 모든 개체의 교배·선별 관계를 한 장의 SVG에 그린다.
-// 계보는 "부모가 항상 자식보다 먼저"인 DAG라서, 세대(깊이)별 레이어 배치가
-// 족보처럼 읽힌다. 위 관계가 없으면 0세대, 있으면 부모 최대 세대 + 1.
-function openGraph() {
-  renderGraph();
-  document.getElementById("graph").hidden = false;
-}
-function closeGraph() {
-  document.getElementById("graph").hidden = true;
-}
-
-function renderGraph() {
-  // 1) 간선 수집 (참조가 깨진 id는 조용히 버리지 않고 그릴 수 없으므로 제외)
-  const edges = [];
-  for (const t of TAXA) {
-    for (const pid of t.parents || []) {
-      if (byId.has(pid)) edges.push({ from: pid, to: t.id, kind: "cross" });
-    }
-    if (t.selectionOf && byId.has(t.selectionOf)) {
-      edges.push({ from: t.selectionOf, to: t.id, kind: "selection" });
-    }
-  }
-  const connected = new Set();
-  for (const e of edges) { connected.add(e.from); connected.add(e.to); }
-
-  // 2) 세대(레이어) 계산
-  const depth = new Map();
-  function depthOf(id, trail) {
-    if (depth.has(id)) return depth.get(id);
-    if (trail.has(id)) return 0; // 데이터 오류로 순환이 생겨도 멈추지 않게 방어
-    trail.add(id);
-    const ups = edges.filter((e) => e.to === id).map((e) => depthOf(e.from, trail));
-    const d = ups.length ? Math.max(...ups) + 1 : 0;
-    depth.set(id, d);
-    return d;
-  }
-  for (const id of connected) depthOf(id, new Set());
-
-  // 3) 레이어별 정렬: 부모들의 평균 x(배리센터)에 가깝게 줄 세워 선 교차를 줄인다.
-  const maxDepth = Math.max(0, ...depth.values());
-  const layers = Array.from({ length: maxDepth + 1 }, () => []);
-  for (const id of connected) layers[depth.get(id)].push(id);
-
-  const NODE_H = 36, LAYER_GAP = 120, X_GAP = 22, PAD = 30;
-  const nodeW = (id) => Math.max(70, byId.get(id).displayName.length * 13 + 28);
-
-  const pos = new Map(); // id -> {x, y, w}
-  layers.forEach((layer, d) => {
-    if (d > 0) {
-      const bary = (id) => {
-        const ups = edges.filter((e) => e.to === id && pos.has(e.from));
-        if (!ups.length) return Number.MAX_SAFE_INTEGER;
-        return ups.reduce((s, e) => s + pos.get(e.from).x, 0) / ups.length;
-      };
-      layer.sort((a, b) => bary(a) - bary(b));
-    }
-    let x = 0;
-    for (const id of layer) {
-      pos.set(id, { x, y: PAD + d * LAYER_GAP, w: nodeW(id) });
-      x += nodeW(id) + X_GAP;
-    }
-  });
-
-  // 4) 레이어를 전체 폭 기준 가운데 정렬
-  const layerWidth = (layer) =>
-    layer.reduce((s, id) => s + pos.get(id).w, 0) + X_GAP * Math.max(0, layer.length - 1);
-  const totalW = Math.max(...layers.map(layerWidth), 320) + PAD * 2;
-  layers.forEach((layer) => {
-    const shift = (totalW - layerWidth(layer)) / 2;
-    for (const id of layer) pos.get(id).x += shift;
-  });
-  const totalH = PAD * 2 + maxDepth * LAYER_GAP + NODE_H;
-
-  // 5) SVG 조립 — 간선 먼저(노드 뒤로 깔리도록), 노드는 그 위에
-  const edgeSvg = edges.map((e) => {
-    const a = pos.get(e.from), b = pos.get(e.to);
-    const x1 = a.x + a.w / 2, y1 = a.y + NODE_H;
-    const x2 = b.x + b.w / 2, y2 = b.y;
-    return `<path class="gedge gedge-${e.kind}" d="M${x1},${y1} C${x1},${y1 + 50} ${x2},${y2 - 50} ${x2},${y2}"/>`;
-  }).join("");
-
-  const nodeSvg = [...connected].map((id) => {
-    const t = byId.get(id), p = pos.get(id);
-    return `<g class="gnode type-${t.type}" data-graph-id="${esc(id)}" transform="translate(${p.x},${p.y})">
-      <rect width="${p.w}" height="${NODE_H}" rx="9"/>
-      <text x="${p.w / 2}" y="${NODE_H / 2 + 4}" text-anchor="middle">${esc(t.displayName)}</text>
-    </g>`;
-  }).join("");
-
-  // 6) 계보 관계가 없는 개체는 그래프 대신 아래 칩 목록으로
-  const isolated = TAXA.filter((t) => !connected.has(t.id));
-  const isolatedHtml = isolated.length
-    ? `<div class="lineage"><h4>계보 관계가 아직 등록되지 않은 개체 (${isolated.length})</h4>
-         <div class="lineage-links">${isolated.map((t) =>
-           `<button class="lineage-link" data-graph-id="${esc(t.id)}">${esc(t.displayName)}</button>`).join("")}
-       </div></div>`
-    : "";
-
-  const body = document.getElementById("graph-body");
-  body.innerHTML = `
-    <h3>전체 계보 그래프</h3>
-    <p class="tree-hint">위에서 아래로 세대가 내려갑니다. <span class="legend-cross">파랑 선 = 교배</span> ·
-      <span class="legend-selection">보라 선 = 선별</span> · 노드를 클릭하면 상세 정보로 이동합니다.</p>
-    <div class="graph-scroll">
-      <svg viewBox="0 0 ${totalW} ${totalH}" width="${totalW}" height="${totalH}"
-           role="img" aria-label="안스리움 전체 계보 그래프">${edgeSvg}${nodeSvg}</svg>
-    </div>
-    ${isolatedHtml}
-  `;
-
-  body.querySelectorAll("[data-graph-id]").forEach((el) => {
-    el.onclick = () => { closeGraph(); openDetail(el.dataset.graphId); };
-  });
-}
+// 전체 계보 시각화는 전용 페이지(lineage.html, 무한 캔버스)로 이동했다.
 
 function lineageBlock(title, taxa) {
   if (!taxa || taxa.length === 0) return "";

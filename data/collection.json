@@ -1,0 +1,214 @@
+{
+  "specimens": [
+    {
+      "id": "villenaorum",
+      "sourceDir": "Villenaorum",
+      "displayName": "빌레나오럼",
+      "label": "Villenaorum",
+      "kind": "species",
+      "catalogRefs": [
+        "villenaorum"
+      ],
+      "parentage": null,
+      "provenanceGrade": "none",
+      "noteKo": "트래킹 자료 없음. 보유 사진만 등록."
+    },
+    {
+      "id": "michelle-x-michelle",
+      "sourceDir": "Michelle x Michelle",
+      "displayName": "미쉘 × 미쉘",
+      "label": "Michelle x Michelle",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "michelle"
+      ],
+      "parentage": "Michelle × Michelle",
+      "provenanceGrade": "none",
+      "noteKo": "트래킹 자료 없음. 보유 사진만 등록."
+    },
+    {
+      "id": "red-mama",
+      "sourceDir": "RedMama",
+      "displayName": "레드 마마",
+      "label": "RedMama",
+      "kind": "hybrid",
+      "catalogRefs": [],
+      "parentage": null,
+      "provenanceGrade": "none",
+      "noteKo": "트래킹 자료 없음. 보유 사진만 등록. 도감의 '다크 마마'와는 별개 이름으로 두고 계통은 기록하지 않음."
+    },
+    {
+      "id": "carlablackiae-og1xog5-x-lp-spd-100",
+      "sourceDir": "carlablackiae (og1xog5) x lp.spd100",
+      "displayName": "칼라블랙키 (OG1 × OG5) × LP.SPD-100",
+      "label": "Carlablackiae (OG1 x OG5) x (LP.SPD-100)",
+      "kind": "species",
+      "catalogRefs": [
+        "carlablackiae"
+      ],
+      "parentage": "carlablackiae (OG1 × OG5) × carlablackiae LP.SPD-100 (RA5 × RA10)",
+      "provenanceGrade": "documented",
+      "noteKo": "원종 간 교배(칼라블랙키 × 칼라블랙키). 모주는 OG1 × OG5, 부주 LP.SPD-100은 RA5 × RA10 조합. 모주·부주 사진이 증빙으로 있음."
+    },
+    {
+      "id": "bvep",
+      "sourceDir": "bvep",
+      "displayName": "안톨라키 (BVEP)",
+      "label": "bvep",
+      "kind": "species",
+      "catalogRefs": [
+        "antolakii"
+      ],
+      "parentage": null,
+      "provenanceGrade": "documented",
+      "noteKo": "트래킹 대화로 이전 소유 경로가 확인된 안톨라키. 더 이전 계통 정보는 확인되지 않음."
+    },
+    {
+      "id": "papillilaminum-x-dressleri-x-rlfs-x-mr-worldwide",
+      "sourceDir": "(papillilaminum x Dressleri) x (RLFS x Mr.Worldwide)",
+      "displayName": "(파필리라미넘 × 드레스러리) × (RLFS × Mr.Worldwide)",
+      "label": "(Papillilaminum x Dressleri) x (RLFS x Mr.Worldwide)",
+      "kind": "seed",
+      "catalogRefs": [
+        "papillilaminum",
+        "dressleri",
+        "fsxrl"
+      ],
+      "parentage": "(papillilaminum × dressleri) × (RLFS × Mr.Worldwide)",
+      "provenanceGrade": "documented",
+      "noteKo": "씨앗으로 받은 개체. 아직 보유 사진은 없고 나눔 게시물 캡처만 있음."
+    },
+    {
+      "id": "papillilaminum-rlxfs-x-rl-self",
+      "sourceDir": "papillilaminum (rl x fs) x rl selft",
+      "displayName": "파필리라미넘 (RL × FS) × RL self",
+      "label": "papillilaminum (rl x fs) x rl self",
+      "kind": "species",
+      "catalogRefs": [
+        "papillilaminum",
+        "rl",
+        "fs",
+        "fsxrl"
+      ],
+      "parentage": "(RL × FS) × RL self",
+      "provenanceGrade": "documented",
+      "noteKo": "원종 간 교배(파필리라미넘 × 파필리라미넘). RL(랄프 라이넘)과 FS(포트 셔먼)는 모두 파필리라미넘 계통. The Grove self 씨들링을 재판매처에서 구매. 폴더명의 'selft'는 'self'의 오타로 보고 정리."
+    },
+    {
+      "id": "rvdp-s1",
+      "sourceDir": "rvdp s1",
+      "displayName": "RVDP s1",
+      "label": "rvdp s1",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "rvdp"
+      ],
+      "parentage": "RVDP self (S1)",
+      "provenanceGrade": "photo",
+      "noteKo": "'s1'은 self 1세대를 뜻함. 판매 페이지의 성체·유묘 사진을 증빙으로 보관."
+    },
+    {
+      "id": "zara-x-michelle-x-pap-x-one",
+      "sourceDir": "(Zara x Michelle) x pap x-one",
+      "displayName": "(자라 × 미쉘) × pap x-one",
+      "label": "(Zara x Michelle) x pap x-one",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "zara",
+        "michelle",
+        "michelle-x-zara",
+        "papillilaminum"
+      ],
+      "parentage": "(Zara × Michelle) × pap x-one",
+      "provenanceGrade": "documented",
+      "noteKo": "'pap x-one'은 자료에 설명이 없어 폴더명 그대로 기록. 이전 소유자가 2025년 5월 24일 로이로스터스 플랜티티마켓에서 구매한 개체(원 셀러명 미확인)."
+    },
+    {
+      "id": "midnight-velvet-x-fsrl-jv",
+      "sourceDir": "MIDNIGHT VELVET x fsrl(jv)",
+      "displayName": "미드나잇 벨벳 × FS×RL (jv clone)",
+      "label": "MIDNIGHT VELVET x FS x RL (jv clone)",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "fsxrl",
+        "fs",
+        "rl"
+      ],
+      "parentage": "Midnight Velvet × FS×RL (jv clone)",
+      "provenanceGrade": "documented",
+      "noteKo": "세 단계 소유 이력이 모두 캡처로 남아 있는 개체. 라벨 원문은 'MIDNIGHT VELVET X FS x RL (jv clone)'."
+    },
+    {
+      "id": "crystallinum",
+      "sourceDir": "crystallinum",
+      "displayName": "크리스탈리넘",
+      "label": "crystallinum",
+      "kind": "species",
+      "catalogRefs": [
+        "crystallinum"
+      ],
+      "parentage": null,
+      "provenanceGrade": "none",
+      "noteKo": "판매 제목에는 '크리스탈리넘 하이브리드'로 기재되어 있어 순수 원종 여부는 미확인."
+    },
+    {
+      "id": "besseae-aff",
+      "sourceDir": "besseae aff",
+      "displayName": "베쎄 aff.",
+      "label": "besseae aff",
+      "kind": "species",
+      "catalogRefs": [
+        "besseae"
+      ],
+      "parentage": null,
+      "provenanceGrade": "none",
+      "noteKo": "'aff.'(affinis) 표기 그대로 유지. 베쎄 유사종으로 유통된 개체이며 정확한 동정은 미확인. 원 모주 정보는 추후 확인되면 추가 예정."
+    },
+    {
+      "id": "ace-of-spades",
+      "sourceDir": "Ace of spade",
+      "displayName": "에이스 오브 스페이드 (A.O.S)",
+      "label": "Ace of spade",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "ace-of-spades"
+      ],
+      "parentage": null,
+      "provenanceGrade": "documented",
+      "noteKo": "A.O.S는 Ace of Spades의 줄임말. 최근 뿌리가 연속으로 녹아 뿌리 정리 후 벌브를 나눠 2개체로 분리함.",
+      "events": [
+        {
+          "type": "division",
+          "summary": "뿌리가 연속으로 녹아 뿌리 정리 후 벌브를 나눠 2개체로 분리"
+        }
+      ]
+    },
+    {
+      "id": "red-crystallinum-var-x-red-dorayaki-x-kos",
+      "sourceDir": "RedCrystallinum Var x (RedDorayaki x K.O.S)",
+      "displayName": "레드 크리스탈리넘 Var × (레드 도라야끼 × K.O.S)",
+      "label": "RedCrystallinum Var x (RedDorayaki x K.O.S)",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "red-crystallinum",
+        "dorayaki"
+      ],
+      "parentage": "RedCrystallinum Var × (RedDorayaki × K.O.S)",
+      "provenanceGrade": "none",
+      "noteKo": "나눔 받은 씨들링이 깨어난 개체. 이벤트로 받은 2개 중 하나만 살아남아 키우는 중. 'Var'와 'K.O.S'는 자료에 설명이 없어 폴더명 그대로 기록. 레드 도라야끼는 도감의 도라야끼와 같은 계통인지 미확인."
+    },
+    {
+      "id": "papillilaminum-panama",
+      "sourceDir": "papillilaminum panama",
+      "displayName": "파필리라미넘 (파나마) F1",
+      "label": "papillilaminum (Panama) F1",
+      "kind": "species",
+      "catalogRefs": [
+        "papillilaminum"
+      ],
+      "parentage": null,
+      "provenanceGrade": "documented",
+      "noteKo": "파나마 산지 표기의 파필리라미넘 F1. 공구 개체의 바텀 부분을 분촉해 나눔 받은 것."
+    }
+  ]
+}
