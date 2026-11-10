@@ -29,13 +29,16 @@
     {
       "id": "red-mama",
       "sourceDir": "RedMama",
-      "displayName": "레드 마마",
-      "label": "RedMama",
+      "displayName": "레드 마마 × (칼라블랙키 × 레드 크리스탈리넘)",
+      "label": "RedMama x (carlablackiae x RedCrystallinum)",
       "kind": "hybrid",
-      "catalogRefs": [],
-      "parentage": null,
+      "catalogRefs": [
+        "carlablackiae",
+        "red-crystallinum"
+      ],
+      "parentage": "RedMama × (carlablackiae × RedCrystallinum)",
       "provenanceGrade": "none",
-      "noteKo": "트래킹 자료 없음. 보유 사진만 등록. 도감의 '다크 마마'와는 별개 이름으로 두고 계통은 기록하지 않음."
+      "noteKo": "모주 레드 마마, 부주 칼라블랙키 × 레드 크리스탈리넘. 판매자 당당님이 직접 교배해 씨들링한 개체로, '(자라 × 미쉘) × pap x-one' 구매 시 서비스로 받음. 계통은 당당님 설명에 따른 것으로 문서 증빙은 없음. 도감의 '다크 마마'와는 별개 이름."
     },
     {
       "id": "carlablackiae-og1xog5-x-lp-spd-100",
@@ -209,6 +212,26 @@
       "parentage": null,
       "provenanceGrade": "documented",
       "noteKo": "파나마 산지 표기의 파필리라미넘 F1. 공구 개체의 바텀 부분을 분촉해 나눔 받은 것."
+    },
+    {
+      "id": "red-crystallinum-tezula-purple-s1",
+      "sourceDir": "RedCrystallinum TezulaPurple s1",
+      "displayName": "레드 크리스탈리넘 테줄라 퍼플 s1",
+      "label": "RedCrystallinum TezulaPurple s1",
+      "kind": "hybrid",
+      "catalogRefs": [
+        "red-crystallinum"
+      ],
+      "parentage": "RedCrystallinum (Tezula) self (S1)",
+      "provenanceGrade": "documented",
+      "noteKo": "테줄라(Tezula) 출신 레드 크리스탈리넘의 self 씨들링. 판매 페이지 문구는 '테줄라 출신의 레드크리스탈리넘 셀프 시들링, 선구매자 순서대로 좋은 개체 선별하여 발송'. 2026-11-10 기준 주문 후 미도착이라 보유 사진은 도착 후 등록 예정.",
+      "events": [
+        {
+          "type": "note",
+          "summary": "네이버 스마트스토어 주문, 미도착",
+          "date": "2026-11-10"
+        }
+      ]
     }
   ]
 }
