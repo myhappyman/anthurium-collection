@@ -748,8 +748,8 @@ input[type="checkbox"] {
 
 .stage {
   display: grid;
-  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
-  gap: var(--space-xl) var(--space-3xl);
+  grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+  gap: var(--space-xl) var(--space-2xl);
   align-items: center;
   margin-top: var(--space-xl);
 }
@@ -759,7 +759,13 @@ input[type="checkbox"] {
   gap: var(--space-lg);
 }
 
+/* 글 칸이 넓으니 제목과 본문은 칸 폭을 다 쓴다 */
+.stage-text h1 {
+  max-width: none;
+}
+
 .stage-text .doc-body {
+  max-width: none;
   margin-top: 0;
   font-size: var(--text-md);
 }
