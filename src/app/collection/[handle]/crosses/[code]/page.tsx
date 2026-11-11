@@ -70,25 +70,39 @@ export default async function PublicCrossPage({
       <Link className="back-link" href={`/collection/${handle}`}>
         ← {profile.display_name}
       </Link>
-      <p className="eyebrow">{cross.code}</p>
       <h1>
         {cross.seed_parent_genotype_id !== null &&
         cross.seed_parent_genotype_id === cross.pollen_parent_genotype_id
           ? "Self 교배"
           : "교배 조합"}
       </h1>
-      <div className="chip-row">
-        <span className="chip">{cross.status}</span>
-        {cross.generation ? <span className="chip">{cross.generation}</span> : null}
-        <span className="chip">종자 {cross.seed_count ?? 0}</span>
-        <span className="chip">발아 {cross.germinated_count ?? 0}</span>
-      </div>
+      <p className="record-code">{cross.code}</p>
+      <dl className="facts facts--figures">
+        <div>
+          <dt>상태</dt>
+          <dd>{cross.status}</dd>
+        </div>
+        {cross.generation ? (
+          <div>
+            <dt>세대</dt>
+            <dd>{cross.generation}</dd>
+          </div>
+        ) : null}
+        <div>
+          <dt>종자</dt>
+          <dd>{cross.seed_count ?? 0}</dd>
+        </div>
+        <div>
+          <dt>발아</dt>
+          <dd>{cross.germinated_count ?? 0}</dd>
+        </div>
+      </dl>
 
       <section className="relation-section">
         <h2>부모 개체</h2>
         <div className="parent-grid">
           <article className="relation-card">
-            <span>SEED PARENT</span>
+            <span>모주</span>
             {seedParent ? (
               <Link
                 href={`/collection/${handle}/genotypes/${seedParent.code}`}
@@ -101,7 +115,7 @@ export default async function PublicCrossPage({
             )}
           </article>
           <article className="relation-card">
-            <span>POLLEN PARENT</span>
+            <span>부주</span>
             {pollenParent ? (
               <Link
                 href={`/collection/${handle}/genotypes/${pollenParent.code}`}
@@ -138,7 +152,7 @@ export default async function PublicCrossPage({
                 <Link
                   href={`/collection/${handle}/genotypes/${offspring.code}`}
                 >
-                  개체 기록 보기 →
+                  개체 기록 보기
                 </Link>
               </article>
             ))}

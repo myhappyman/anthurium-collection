@@ -14,7 +14,6 @@ export default function LoginPage() {
   return (
     <section className="auth-page">
       <div className="auth-card">
-        <p className="eyebrow">OWNER ACCESS</p>
         <h1>컬렉션 관리 로그인</h1>
         {isConfigured ? (
           <>

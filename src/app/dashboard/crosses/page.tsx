@@ -9,7 +9,6 @@ export default async function CrossesPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">CROSSES</p>
           <h1>교배</h1>
           <p>Self를 포함한 수분·결실·발아와 자손을 추적합니다.</p>
         </div>

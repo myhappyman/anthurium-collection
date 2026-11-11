@@ -33,7 +33,7 @@ export function SpecimenForm({ genotypes }: SpecimenFormProps) {
           <select name="genotypeId" required>
             {genotypes.map((genotype) => (
               <option key={genotype.id} value={genotype.id}>
-                {genotype.code} · {genotype.display_name}
+                {genotype.code} ({genotype.display_name})
               </option>
             ))}
           </select>

@@ -36,8 +36,8 @@ export default async function GenotypeDetailPage({
       </Link>
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">{details.genotype.code}</p>
           <h1>{details.genotype.display_name}</h1>
+          <p className="record-code">{details.genotype.code}</p>
           <p>
             {details.genotype.kind} · 출처 등급{" "}
             {details.genotype.provenance_grade}

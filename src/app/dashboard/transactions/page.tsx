@@ -9,7 +9,6 @@ export default async function TransactionsPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">PRIVATE TRANSACTIONS</p>
           <h1>거래</h1>
           <p>가격·상대방·거래 메모는 공개 컬렉션에 노출되지 않습니다.</p>
         </div>

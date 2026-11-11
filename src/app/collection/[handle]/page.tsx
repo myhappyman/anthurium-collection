@@ -36,7 +36,6 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
   return (
     <section className="page-section">
       <div className="collection-profile">
-        <p className="eyebrow">PUBLIC COLLECTION</p>
         <h1>{profile.display_name}</h1>
         {profile.bio ? <p>{profile.bio}</p> : null}
       </div>
@@ -57,7 +56,7 @@ export default async function CollectionPage({ params }: CollectionPageProps) {
               <Link
                 href={`/collection/${handle}/genotypes/${genotype.code}`}
               >
-                계보와 기록 보기 →
+                계보와 기록 보기
               </Link>
             </article>
           ))}

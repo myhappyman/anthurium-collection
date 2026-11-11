@@ -14,3 +14,6 @@ supabase/.temp/
 
 # 보유 개체 원본 사진·출처 증빙 (업로드 원본, 저장소에 올리지 않음)
 /docs/ref/
+
+# Hallmark 감사·비교 기록 (로컬 전용)
+.hallmark/

@@ -12,7 +12,6 @@ export default async function NewObservationPage() {
         ← 관찰 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW OBSERVATION</p>
         <h1>성장 관찰</h1>
       </div>
       {specimens.length === 0 ? (

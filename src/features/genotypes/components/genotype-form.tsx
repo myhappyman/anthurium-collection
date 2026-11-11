@@ -58,11 +58,11 @@ export function GenotypeForm() {
         <label>
           출처 신뢰도
           <select defaultValue="U" name="provenanceGrade">
-            <option value="A">A — 브리더 원기록 확인</option>
-            <option value="B">B — 부모·배치 확인</option>
-            <option value="C">C — 판매자 주장만 확인</option>
-            <option value="D">D — 외형 추정</option>
-            <option value="U">U — 미확인</option>
+            <option value="A">A: 브리더 원기록 확인</option>
+            <option value="B">B: 부모·배치 확인</option>
+            <option value="C">C: 판매자 주장만 확인</option>
+            <option value="D">D: 외형 추정</option>
+            <option value="U">U: 미확인</option>
           </select>
         </label>
         <label>

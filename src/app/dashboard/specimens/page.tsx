@@ -9,7 +9,6 @@ export default async function SpecimensPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">SPECIMENS</p>
           <h1>화분</h1>
           <p>실제로 존재하는 식물 단위입니다.</p>
         </div>

@@ -12,7 +12,6 @@ export default async function NewSpecimenPage() {
         ← 화분 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW SPECIMEN</p>
         <h1>화분 등록</h1>
       </div>
       {genotypes.length === 0 ? (

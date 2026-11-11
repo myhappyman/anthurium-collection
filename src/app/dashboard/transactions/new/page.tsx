@@ -12,7 +12,6 @@ export default async function NewTransactionPage() {
         ← 거래 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW TRANSACTION</p>
         <h1>거래 기록</h1>
       </div>
       {specimens.length === 0 ? (

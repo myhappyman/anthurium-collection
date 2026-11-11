@@ -9,7 +9,6 @@ export default async function ObservationsPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">OBSERVATIONS</p>
           <h1>관찰</h1>
           <p>값을 덮어쓰지 않고 날짜별 성장 추세를 누적합니다.</p>
         </div>

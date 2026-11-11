@@ -9,7 +9,6 @@ export default async function MediaPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">MEDIA & EVIDENCE</p>
           <h1>사진·증빙</h1>
           <p>공개 사진과 출처·거래 증빙을 서로 다른 버킷에 보관합니다.</p>
         </div>

@@ -12,7 +12,6 @@ export default async function NewSeedlingPage() {
         ← 교배 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW PROGENY</p>
         <h1>자손 등록</h1>
         <p>새 유전 개체와 첫 실생 화분이 함께 생성됩니다.</p>
       </div>

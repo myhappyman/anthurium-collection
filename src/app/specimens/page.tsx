@@ -18,42 +18,50 @@ export default function SpecimensPage() {
   const trackingCounts = getTrackingCounts();
 
   return (
-    <section className="page-section">
-      <div className="page-heading">
-        <p className="eyebrow">MY COLLECTION</p>
-        <h1>보유 개체</h1>
-        <p>
-          도감의 종·하이브리드 정보와 별개로, 실제 화분 단위로 사진과 출처
-          증빙을 모았습니다. 계통은 라벨·판매자 자료에 적힌 내용만 기록합니다.
-        </p>
-      </div>
-      <section className="summary-grid" aria-label="보유 현황">
-        <article>
-          <strong>{summary.total}</strong>
-          <span>보유 개체</span>
-        </article>
-        <article>
-          <strong>{summary.documented}</strong>
-          <span>출처 증빙 있음</span>
-        </article>
-        <article>
-          <strong>{summary.photo}</strong>
-          <span>판매자 사진만</span>
-        </article>
-        <article>
-          <strong>{summary.photoCount}</strong>
-          <span>보유 사진</span>
-        </article>
+    <>
+      <section className="index-hero">
+        <div className="container index-hero-grid">
+          <div>
+            <h1>보유 개체</h1>
+            <p className="lead">
+              도감의 종·하이브리드 정보와 별개로, 실제 화분 단위로 사진과 출처
+              증빙을 모았습니다. 계통은 라벨·판매자 자료에 적힌 내용만
+              기록합니다.
+            </p>
+          </div>
+          <dl className="facts facts--figures" aria-label="보유 현황">
+            <div>
+              <dt>보유 개체</dt>
+              <dd>{summary.total}</dd>
+            </div>
+            <div>
+              <dt>출처 증빙 있음</dt>
+              <dd className="figure--signal">{summary.documented}</dd>
+            </div>
+            <div>
+              <dt>판매자 사진만</dt>
+              <dd>{summary.photo}</dd>
+            </div>
+            <div>
+              <dt>보유 사진</dt>
+              <dd>{summary.photoCount}</dd>
+            </div>
+          </dl>
+        </div>
       </section>
-      <div className="specimen-grid">
-        {specimens.map((specimen) => (
-          <SpecimenCard
-            key={specimen.id}
-            specimen={specimen}
-            trackingCount={trackingCounts.get(specimen.id)}
-          />
-        ))}
-      </div>
-    </section>
+      <section className="guide">
+        <div className="container">
+          <ol className="plates">
+            {specimens.map((specimen) => (
+              <SpecimenCard
+                key={specimen.id}
+                specimen={specimen}
+                trackingCount={trackingCounts.get(specimen.id)}
+              />
+            ))}
+          </ol>
+        </div>
+      </section>
+    </>
   );
 }

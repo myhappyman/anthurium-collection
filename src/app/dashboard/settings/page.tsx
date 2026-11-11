@@ -11,7 +11,6 @@ export default async function SettingsPage() {
   return (
     <section className="dashboard-page narrow">
       <div className="dashboard-heading">
-        <p className="eyebrow">PUBLIC PROFILE</p>
         <h1>공개 설정</h1>
         <p>다른 사람이 방문할 컬렉션 주소와 표시 정보를 설정합니다.</p>
       </div>

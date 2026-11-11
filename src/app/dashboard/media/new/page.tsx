@@ -12,7 +12,6 @@ export default async function NewMediaPage() {
         ← 사진·증빙 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">UPLOAD MEDIA</p>
         <h1>파일 업로드</h1>
       </div>
       {specimens.length === 0 ? (
