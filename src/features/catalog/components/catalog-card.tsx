@@ -1,13 +1,24 @@
 import Link from "next/link";
 
+import { getCatalogNode } from "../catalog.queries";
 import { type CatalogNode } from "../catalog.types";
 
 type CatalogCardProps = {
   node: CatalogNode;
 };
 
-/** 도감 행: 이름, 학명, 약칭 (field guide의 한 행) */
+/** 도감 행: 이름, 학명, 약칭과 선별 바탕 (field guide의 한 행) */
 export function CatalogCard({ node }: CatalogCardProps) {
+  const selectionBase = node.selectionOf
+    ? getCatalogNode(node.selectionOf)
+    : undefined;
+  const line = [
+    node.abbreviations.slice(0, 3).join(", "),
+    selectionBase ? `${selectionBase.displayName} 선별` : "",
+  ]
+    .filter(Boolean)
+    .join(", ");
+
   return (
     <li>
       <h3 className="index-name">
@@ -18,9 +29,7 @@ export function CatalogCard({ node }: CatalogCardProps) {
       ) : (
         <span />
       )}
-      {node.abbreviations.length > 0 ? (
-        <p className="index-line">{node.abbreviations.slice(0, 3).join(", ")}</p>
-      ) : null}
+      {line ? <p className="index-line">{line}</p> : null}
     </li>
   );
 }

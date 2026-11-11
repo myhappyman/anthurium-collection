@@ -79,6 +79,9 @@ export default async function CatalogDetailPage({
     .map((parentId) => getCatalogNode(parentId))
     .filter((parent) => parent !== undefined);
   const traits = Object.entries(node.traits ?? {});
+  const selectionBase = node.selectionOf
+    ? getCatalogNode(node.selectionOf)
+    : undefined;
 
   return (
     <article className="doc">
@@ -99,6 +102,16 @@ export default async function CatalogDetailPage({
                 <dt>분류</dt>
                 <dd>{CATALOG_TYPE_LABELS[node.type]}</dd>
               </div>
+              {selectionBase ? (
+                <div>
+                  <dt>선별 바탕</dt>
+                  <dd>
+                    <Link href={`/catalog/${selectionBase.id}`}>
+                      {selectionBase.displayName}
+                    </Link>
+                  </dd>
+                </div>
+              ) : null}
               {node.abbreviations.length > 0 ? (
                 <div>
                   <dt>약칭</dt>

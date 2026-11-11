@@ -75,7 +75,8 @@
       "catalogRefs": [
         "papillilaminum",
         "dressleri",
-        "fsxrl"
+        "fs",
+        "rl"
       ],
       "parentage": "(papillilaminum × dressleri) × (RLFS × Mr.Worldwide)",
       "provenanceGrade": "documented",
@@ -90,8 +91,7 @@
       "catalogRefs": [
         "papillilaminum",
         "rl",
-        "fs",
-        "fsxrl"
+        "fs"
       ],
       "parentage": "(RL × FS) × RL self",
       "provenanceGrade": "documented",
@@ -133,7 +133,6 @@
       "label": "MIDNIGHT VELVET x FS x RL (jv clone)",
       "kind": "hybrid",
       "catalogRefs": [
-        "fsxrl",
         "fs",
         "rl"
       ],
