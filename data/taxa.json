@@ -343,24 +343,6 @@
       "verified": true
     },
     {
-      "id": "michelle-x-zara",
-      "displayName": "미쉘 × 자라",
-      "scientificName": "Anthurium 'Michelle' × 'Zara' (DocBlock)",
-      "type": "hybrid",
-      "abbreviations": ["MxZ"],
-      "parents": ["michelle", "zara"],
-      "aka": ["Michelle x Zara", "Zara x Michelle"],
-      "descriptionKo": "닥블락(Dr. Jeff Block)의 두 인기 개체 미쉘 × 자라 교배. 신엽이 버건디·퍼플에서 레드·브라운에 이르는 강렬한 색으로 전개됐다가, 성숙하며 벨벳질 짙은 녹색으로 변하고 앞·뒷면에 잎맥 대비가 또렷하게 드러난다. 다시 다른 개체와의 추가 교배(F2 등) 부모로도 널리 쓰인다.",
-      "traits": { "leaf": "하트형", "vein": "앞뒤로 또렷한 잎맥 대비", "texture": "벨벳", "newLeaf": "버건디·퍼플~레드·브라운 전개", "color": "성숙 시 짙은 녹색", "breeder": "닥블락(Dr. Jeff Block)" },
-      "tags": ["하이브리드", "교배", "벨벳", "신엽컬러", "닥블락"],
-      "images": ["images/michelle-x-zara.jpg"],
-      "sources": [
-        "https://www.carnivero.com/products/anthurium-zara-x-michelle-x-doc-block-f2",
-        "https://growtropicals.com/products/anthurium-zara-x-michelle-x-luxurians"
-      ],
-      "verified": true
-    },
-    {
       "id": "fs",
       "displayName": "포트 셔먼",
       "scientificName": "Anthurium papillilaminum 'Fort Sherman'",
