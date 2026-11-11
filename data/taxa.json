@@ -307,6 +307,23 @@
       "verified": true
     },
     {
+      "id": "queen-of-hearts",
+      "displayName": "퀸 오브 하츠",
+      "scientificName": "Anthurium 'Queen of Hearts'",
+      "type": "hybrid",
+      "abbreviations": ["QoH"],
+      "parents": ["ace-of-spades"],
+      "aka": ["Queen of Hearts"],
+      "descriptionKo": "플로리다 Silver Krome Gardens에서 A.O.S(에이스 오브 스페이드) 씨앗을 조직배양하던 중 발견된 개체. 유통 자료에 따르면 그중 한 실생이 다른 것보다 훨씬 빨리 자라 배양병을 차지했고, 벌레에 의한 타가수분으로 화분친이 다른 것으로 추정돼 William Rotolante가 '퀸 오브 하츠'로 명명하고 조직배양으로 유지해 왔다. 즉 씨방친은 A.O.S, 화분친은 미상이다. 이름은 A.O.S의 카드 이름을 잇는다. ★계통은 판매처 서술에 근거하며 품종등록 기록은 아직 확인하지 못함.",
+      "traits": { "parentage": "A.O.S × 미상(조직배양 중 발견)", "originator": "William Rotolante (Silver Krome Gardens)", "propagation": "조직배양(TC)" },
+      "tags": ["하이브리드", "조직배양", "A.O.S계", "계통미상"],
+      "images": [],
+      "sources": [
+        "https://www.foliage-factory.com/anthurium-queen-of-hearts"
+      ],
+      "verified": false
+    },
+    {
       "id": "michelle",
       "displayName": "미쉘",
       "scientificName": "Anthurium 'Michelle' (DocBlock)",
