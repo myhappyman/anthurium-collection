@@ -131,6 +131,24 @@
       "images": ["images/papillilaminum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Anthurium_papillilaminum.jpg/960px-Anthurium_papillilaminum.jpg"], "sources": [], "verified": true
     },
     {
+      "id": "papillilaminum-x-one",
+      "displayName": "파필리라미넘 엑스원",
+      "scientificName": "Anthurium papillilaminum 'X-One'",
+      "type": "hybrid",
+      "abbreviations": ["X-One", "X1", "pap x-one"],
+      "parents": ["papillilaminum"],
+      "aka": ["Papillilaminum X-One", "Pap X1"],
+      "descriptionKo": "인도네시아에서 나온 파필리라미넘(papillilaminum) 하이브리드로, 현지에서는 '오래된 파필 클론'으로 통한다. 짙은 다크 벨벳 잎과 굵게 대비되는 잎맥, 넓은 하트형에서 길쭉한 형태의 잎이 특징이며, 인도네시아 교배에서 다른 개체의 부모로도 쓰인다. ★한쪽 부모가 파필리라미넘이라는 것 외에 정확한 교배 계통은 공개된 자료에 없어 미상으로 둔다.",
+      "traits": { "leaf": "넓은 하트형~길쭉한 형", "color": "다크", "vein": "굵은 대비 잎맥", "texture": "벨벳", "origin": "인도네시아 교배", "parentage": "papillilaminum × 미상" },
+      "tags": ["하이브리드", "다크", "벨벳", "인도네시아", "계통미상"],
+      "images": [],
+      "sources": [
+        "https://selawase-aroid.com/product/anthurium-papillilaminum-xone/",
+        "https://aroidmarket.com/products/anthurium-papillilaminum-x-one"
+      ],
+      "verified": false
+    },
+    {
       "id": "radicans",
       "displayName": "라디칸스",
       "scientificName": "Anthurium radicans",
