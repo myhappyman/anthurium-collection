@@ -16,7 +16,6 @@ export default async function SpecimenLabelsPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action print-hidden">
         <div>
-          <p className="eyebrow">SPECIMEN LABELS</p>
           <h1>화분 라벨</h1>
           <p>
             공개 화분은 고유 주소를 담은 QR과 함께 인쇄됩니다. QR은 외부

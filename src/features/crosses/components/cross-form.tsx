@@ -42,7 +42,7 @@ export function CrossForm({ genotypes }: CrossFormProps) {
             <option value="">미확인</option>
             {genotypes.map((genotype) => (
               <option key={genotype.id} value={genotype.id}>
-                {genotype.code} · {genotype.display_name}
+                {genotype.code} ({genotype.display_name})
               </option>
             ))}
           </select>
@@ -53,7 +53,7 @@ export function CrossForm({ genotypes }: CrossFormProps) {
             <option value="">미확인</option>
             {genotypes.map((genotype) => (
               <option key={genotype.id} value={genotype.id}>
-                {genotype.code} · {genotype.display_name}
+                {genotype.code} ({genotype.display_name})
               </option>
             ))}
           </select>

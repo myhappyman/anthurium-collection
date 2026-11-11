@@ -49,11 +49,11 @@ export function ObservationForm({ specimens }: ObservationFormProps) {
           활력
           <select defaultValue="" name="vigor">
             <option value="">미기록</option>
-            <option value="1">1 — 매우 약함</option>
-            <option value="2">2 — 약함</option>
-            <option value="3">3 — 보통</option>
-            <option value="4">4 — 좋음</option>
-            <option value="5">5 — 매우 좋음</option>
+            <option value="1">1: 매우 약함</option>
+            <option value="2">2: 약함</option>
+            <option value="3">3: 보통</option>
+            <option value="4">4: 좋음</option>
+            <option value="5">5: 매우 좋음</option>
           </select>
         </label>
         <label>

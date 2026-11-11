@@ -56,10 +56,10 @@ export function SeedlingForm({ crosses }: SeedlingFormProps) {
         <label>
           출처 신뢰도
           <select defaultValue="A" name="provenanceGrade">
-            <option value="A">A — 자체 교배 원기록</option>
-            <option value="B">B — 부모·배치 확인</option>
-            <option value="C">C — 외부 주장</option>
-            <option value="U">U — 미확인</option>
+            <option value="A">A: 자체 교배 원기록</option>
+            <option value="B">B: 부모·배치 확인</option>
+            <option value="C">C: 외부 주장</option>
+            <option value="U">U: 미확인</option>
           </select>
         </label>
         <label>

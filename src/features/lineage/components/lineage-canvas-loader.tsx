@@ -15,8 +15,13 @@ const LineageCanvas = dynamic(
 
 type LineageCanvasLoaderProps = {
   nodes: readonly LineageNodeInput[];
+  /** 다른 페이지 안에 놓인 캔버스: 처음에 전체를 맞추고, 휠은 Ctrl/⌘ 와 함께일 때만 확대 */
+  embedded?: boolean;
 };
 
-export function LineageCanvasLoader({ nodes }: LineageCanvasLoaderProps) {
-  return <LineageCanvas nodes={nodes} />;
+export function LineageCanvasLoader({
+  nodes,
+  embedded = false,
+}: LineageCanvasLoaderProps) {
+  return <LineageCanvas embedded={embedded} nodes={nodes} />;
 }

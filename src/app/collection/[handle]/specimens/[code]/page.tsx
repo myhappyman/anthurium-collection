@@ -90,8 +90,8 @@ export default async function PublicSpecimenPage({
       <Link className="back-link" href={`/collection/${handle}`}>
         ← {profile.display_name}
       </Link>
-      <p className="eyebrow">{specimen.code}</p>
       <h1>{details.genotype?.display_name ?? "공개 화분"}</h1>
+      <p className="record-code">{specimen.code}</p>
       <div className="chip-row">
         <span className="chip">{specimen.status}</span>
         <span className="chip">{specimen.propagation_method}</span>

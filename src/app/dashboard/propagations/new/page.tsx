@@ -12,7 +12,6 @@ export default async function NewPropagationPage() {
         ← 증식 기록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">CLONAL PROPAGATION</p>
         <h1>복제 화분 생성</h1>
         <p>줄기 절단은 새로운 유전 개체가 아니라 새로운 화분을 만듭니다.</p>
       </div>

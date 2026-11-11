@@ -9,7 +9,6 @@ export default async function GenotypesPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">GENOTYPES</p>
           <h1>유전 개체</h1>
           <p>실생 형제는 각각 등록하고, 복제 화분은 같은 개체에 연결합니다.</p>
         </div>

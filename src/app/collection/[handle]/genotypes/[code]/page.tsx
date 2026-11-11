@@ -52,8 +52,8 @@ export default async function PublicGenotypePage({
       <Link className="back-link" href={`/collection/${handle}`}>
         ← {profile.display_name}
       </Link>
-      <p className="eyebrow">{genotype.code}</p>
       <h1>{genotype.display_name}</h1>
+      <p className="record-code">{genotype.code}</p>
       <div className="chip-row">
         <span className="chip">{genotype.kind}</span>
         {genotype.generation ? (

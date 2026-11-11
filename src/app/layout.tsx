@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#102a22",
-  colorScheme: "light",
+  themeColor: "#163f33",
+  colorScheme: "dark",
 };
 
 type RootLayoutProps = Readonly<{
@@ -26,21 +26,45 @@ type RootLayoutProps = Readonly<{
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko">
+      <head>
+        <link href="https://fonts.googleapis.com" rel="preconnect" />
+        <link
+          crossOrigin="anonymous"
+          href="https://fonts.gstatic.com"
+          rel="preconnect"
+        />
+        {/* eslint-disable-next-line @next/next/no-page-custom-font -- app router root layout: the link serves every page */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;700&family=Noto+Serif+KR&family=Noto+Sans+KR:wght@400;500;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body>
         <header className="site-header">
-          <Link className="brand" href="/">
-            Anthurium Archive
-          </Link>
-          <nav aria-label="주요 메뉴">
-            <Link href="/catalog">도감</Link>
-            <Link href="/lineage">계보</Link>
-            <Link href="/specimens">보유 개체</Link>
-            <Link href="/dashboard">관리</Link>
-          </nav>
+          <div className="container site-header-row">
+            <Link aria-label="홈으로" className="brand" href="/">
+              Anthurium Archive
+            </Link>
+            <nav aria-label="주요 메뉴">
+              <Link href="/catalog">도감</Link>
+              <Link href="/lineage">계보</Link>
+              <Link href="/specimens">보유 개체</Link>
+              <Link href="/dashboard">관리</Link>
+            </nav>
+          </div>
         </header>
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <footer className="site-footer">
-          <p>안스리움 도감 · 컬렉션 · 브리딩 기록</p>
+          <div className="container site-footer-row">
+            <p className="site-footer-mark">Anthurium Archive</p>
+            <p className="site-footer-close">
+              안스리움 도감
+              <br />
+              컬렉션
+              <br />
+              브리딩 기록
+            </p>
+          </div>
         </footer>
         <ServiceWorkerRegistration />
       </body>

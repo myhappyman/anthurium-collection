@@ -111,8 +111,8 @@ export default async function SpecimenDetailPage({
       </Link>
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">{details.specimen.code}</p>
           <h1>{details.genotype?.display_name ?? "연결 유전 개체"}</h1>
+          <p className="record-code">{details.specimen.code}</p>
           <p>
             {details.genotype?.code ?? details.specimen.genotype_id} ·{" "}
             {details.specimen.propagation_method}

@@ -4,6 +4,7 @@ import {
   type PointerEvent as ReactPointerEvent,
   type WheelEvent,
   useCallback,
+  useEffect,
   useMemo,
   useRef,
   useState,
@@ -29,6 +30,8 @@ type Point = {
 
 type LineageCanvasProps = {
   nodes: readonly LineageNodeInput[];
+  /** 다른 페이지 안에 놓인 캔버스: 처음에 전체를 맞추고, 휠은 Ctrl/⌘ 와 함께일 때만 확대 */
+  embedded?: boolean;
 };
 
 const MIN_SCALE = 0.15;
@@ -49,9 +52,10 @@ function getMidpoint(left: Point, right: Point): Point {
   };
 }
 
-export function LineageCanvas({ nodes }: LineageCanvasProps) {
+export function LineageCanvas({ nodes, embedded = false }: LineageCanvasProps) {
   const graph = useMemo(() => buildLineageGraph(nodes), [nodes]);
   const svgRef = useRef<SVGSVGElement>(null);
+  const toolbarRef = useRef<HTMLDivElement>(null);
   const pointers = useRef(new Map<number, Point>());
   const previousPinch = useRef<{ distance: number; midpoint: Point } | null>(
     null,
@@ -87,7 +91,66 @@ export function LineageCanvas({ nodes }: LineageCanvasProps) {
     });
   }, [graph.height, graph.width]);
 
+  // 처음 보일 때는 실제로 그려진 노드 범위를 높이에 맞춰 보여 준다:
+  // 폭에 맞추면 41개 노드가 읽을 수 없을 만큼 작아지고, 레이아웃 상자 높이에는 빈 여백이 섞인다.
+  // 아래 툴바가 차지하는 띠는 비워 두고, 노드가 너무 커지지 않도록 배율은 1.25까지만.
+  const fitHeight = useCallback(() => {
+    const svg = svgRef.current;
+
+    if (!svg || graph.nodes.length === 0) {
+      return;
+    }
+
+    const { width, height: fullHeight } = svg.getBoundingClientRect();
+    const toolbarStrip = (toolbarRef.current?.offsetHeight ?? 0) + 24;
+    const height = fullHeight - toolbarStrip;
+    const padding = 32;
+    let minX = Infinity;
+    let maxX = -Infinity;
+    let minY = Infinity;
+    let maxY = -Infinity;
+
+    for (const node of graph.nodes) {
+      minX = Math.min(minX, node.x);
+      maxX = Math.max(maxX, node.x + node.width);
+      minY = Math.min(minY, node.y);
+      maxY = Math.max(maxY, node.y + LINEAGE_NODE_HEIGHT);
+    }
+
+    const extentWidth = maxX - minX;
+    const extentHeight = maxY - minY;
+    const scale = Math.min(
+      1.25,
+      clampScale((height - padding * 2) / extentHeight),
+    );
+
+    setCamera({
+      x: (width - extentWidth * scale) / 2 - minX * scale,
+      y: (height - extentHeight * scale) / 2 - minY * scale,
+      scale,
+    });
+  }, [graph.nodes]);
+
+  useEffect(() => {
+    const svg = svgRef.current;
+
+    if (!svg) {
+      return;
+    }
+
+    fitHeight();
+    // 뷰포트가 바뀌어도(회전, 창 크기) 그려진 범위를 다시 맞춘다
+    const observer = new ResizeObserver(() => fitHeight());
+    observer.observe(svg);
+    return () => observer.disconnect();
+  }, [fitHeight]);
+
   function handleWheel(event: WheelEvent<SVGSVGElement>) {
+    // 페이지 안에 놓였을 때 보통의 휠은 페이지 스크롤로 둔다
+    if (embedded && !event.ctrlKey && !event.metaKey) {
+      return;
+    }
+
     event.preventDefault();
     const bounds = event.currentTarget.getBoundingClientRect();
     const pointerX = event.clientX - bounds.left;
@@ -204,7 +267,7 @@ export function LineageCanvas({ nodes }: LineageCanvasProps) {
 
   return (
     <div className="lineage-workspace">
-      <div className="lineage-toolbar">
+      <div className="lineage-toolbar" ref={toolbarRef}>
         <label>
           <span className="sr-only">계보 검색</span>
           <input
@@ -267,7 +330,7 @@ export function LineageCanvas({ nodes }: LineageCanvasProps) {
             patternUnits="userSpaceOnUse"
             width="24"
           >
-            <circle cx="2" cy="2" fill="#aab7aa" r="1.2" />
+            <circle className="lineage-dot" cx="2" cy="2" r="1.2" />
           </pattern>
         </defs>
         <rect fill="url(#lineage-dots)" height="100%" width="100%" />
@@ -342,7 +405,9 @@ export function LineageCanvas({ nodes }: LineageCanvasProps) {
         </g>
       </svg>
       <p className="canvas-help">
-        드래그 이동 · 휠/핀치 확대 · 노드 선택 시 조상과 자손 강조
+        <span>드래그 이동</span>
+        <span>휠/핀치 확대</span>
+        <span>노드 선택 시 조상과 자손 강조</span>
       </p>
     </div>
   );

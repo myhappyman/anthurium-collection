@@ -39,8 +39,8 @@ export function ActivityTimeline({ items }: ActivityTimelineProps) {
             {DATE_FORMATTER.format(new Date(item.occurredAt))}
           </time>
           <div>
-            <span>{CATEGORY_LABELS[item.category]}</span>
             <strong>{item.label}</strong>
+            <span>{CATEGORY_LABELS[item.category]}</span>
             {item.detail ? <p>{item.detail}</p> : null}
           </div>
         </li>

@@ -9,7 +9,6 @@ export default function NewGenotypePage() {
         ← 유전 개체 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW GENOTYPE</p>
         <h1>유전 개체 등록</h1>
       </div>
       <GenotypeForm />

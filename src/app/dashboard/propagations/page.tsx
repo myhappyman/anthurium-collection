@@ -18,7 +18,6 @@ export default async function PropagationsPage() {
     <section className="dashboard-page">
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">PROPAGATIONS</p>
           <h1>줄기 절단·증식</h1>
           <p>복제 화분은 원본과 동일한 유전 개체 아래 연결됩니다.</p>
         </div>

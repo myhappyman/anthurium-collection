@@ -18,7 +18,6 @@ export default async function DashboardLayout({
     <div className="dashboard-shell">
       <aside className="dashboard-sidebar">
         <div>
-          <p className="eyebrow">COLLECTION DESK</p>
           <strong>브리딩 기록</strong>
         </div>
         <nav aria-label="컬렉션 관리">

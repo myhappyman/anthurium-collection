@@ -12,7 +12,6 @@ export default async function NewCrossPage() {
         ← 교배 목록
       </Link>
       <div className="dashboard-heading">
-        <p className="eyebrow">NEW CROSS</p>
         <h1>교배 등록</h1>
       </div>
       <CrossForm genotypes={genotypes} />

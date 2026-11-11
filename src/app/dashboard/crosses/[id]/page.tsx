@@ -40,8 +40,8 @@ export default async function CrossDetailPage({
       </Link>
       <div className="dashboard-heading with-action">
         <div>
-          <p className="eyebrow">{details.cross.code}</p>
           <h1>{isSelf ? "Self 교배" : "교배 조합"}</h1>
+          <p className="record-code">{details.cross.code}</p>
           <p>
             {details.cross.generation ?? "세대 미기록"} ·{" "}
             {details.cross.status}
@@ -59,7 +59,7 @@ export default async function CrossDetailPage({
         <h2>부모 개체</h2>
         <div className="parent-grid">
           <article className="relation-card">
-            <span>SEED PARENT</span>
+            <span>모주</span>
             {details.seedParent ? (
               <Link href={`/dashboard/genotypes/${details.seedParent.id}`}>
                 <strong>{details.seedParent.display_name}</strong>
@@ -70,7 +70,7 @@ export default async function CrossDetailPage({
             )}
           </article>
           <article className="relation-card">
-            <span>POLLEN PARENT</span>
+            <span>부주</span>
             {details.pollenParent ? (
               <Link href={`/dashboard/genotypes/${details.pollenParent.id}`}>
                 <strong>{details.pollenParent.display_name}</strong>
