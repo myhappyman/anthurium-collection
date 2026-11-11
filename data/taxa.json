@@ -131,6 +131,24 @@
       "images": ["images/papillilaminum.jpg", "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Anthurium_papillilaminum.jpg/960px-Anthurium_papillilaminum.jpg"], "sources": [], "verified": true
     },
     {
+      "id": "papillilaminum-x-one",
+      "displayName": "파필리라미넘 엑스원",
+      "scientificName": "Anthurium papillilaminum 'X-One'",
+      "type": "hybrid",
+      "abbreviations": ["X-One", "X1", "pap x-one"],
+      "parents": ["papillilaminum"],
+      "aka": ["Papillilaminum X-One", "Pap X1"],
+      "descriptionKo": "인도네시아에서 나온 파필리라미넘(papillilaminum) 하이브리드로, 현지에서는 '오래된 파필 클론'으로 통한다. 짙은 다크 벨벳 잎과 굵게 대비되는 잎맥, 넓은 하트형에서 길쭉한 형태의 잎이 특징이며, 인도네시아 교배에서 다른 개체의 부모로도 쓰인다. ★한쪽 부모가 파필리라미넘이라는 것 외에 정확한 교배 계통은 공개된 자료에 없어 미상으로 둔다.",
+      "traits": { "leaf": "넓은 하트형~길쭉한 형", "color": "다크", "vein": "굵은 대비 잎맥", "texture": "벨벳", "origin": "인도네시아 교배", "parentage": "papillilaminum × 미상" },
+      "tags": ["하이브리드", "다크", "벨벳", "인도네시아", "계통미상"],
+      "images": [],
+      "sources": [
+        "https://selawase-aroid.com/product/anthurium-papillilaminum-xone/",
+        "https://aroidmarket.com/products/anthurium-papillilaminum-x-one"
+      ],
+      "verified": false
+    },
+    {
       "id": "radicans",
       "displayName": "라디칸스",
       "scientificName": "Anthurium radicans",
@@ -289,19 +307,6 @@
       "verified": true
     },
     {
-      "id": "magni-crystal",
-      "displayName": "매그니피컴 × 크리스탈리넘",
-      "scientificName": "Anthurium magnificum × crystallinum",
-      "type": "hybrid",
-      "abbreviations": [],
-      "parents": ["magnificum", "crystallinum"],
-      "aka": [],
-      "descriptionKo": "시장에서 매우 흔한 교배. 두 부모의 중간 형질(잎맥 굵기·잎 질감)을 보여, 입문자가 'crystallinum인 줄 알았는데 교배였다'고 헷갈리기 쉬운 대표 사례.",
-      "traits": { "leaf": "하트형(중간형질)", "vein": "흰~은맥", "texture": "벨벳" },
-      "tags": ["하이브리드", "벨벳", "흰잎맥"],
-      "images": ["images/magni-crystal.jpg"], "sources": [], "verified": true
-    },
-    {
       "id": "ace-of-spades",
       "displayName": "A.O.S(에이스 오브 스페이드)",
       "scientificName": "Anthurium 'Ace of Spades'",
@@ -320,13 +325,29 @@
       "verified": true
     },
     {
+      "id": "queen-of-hearts",
+      "displayName": "퀸 오브 하츠",
+      "scientificName": "Anthurium 'Queen of Hearts'",
+      "type": "hybrid",
+      "abbreviations": ["QoH"],
+      "parents": ["ace-of-spades"],
+      "aka": ["Queen of Hearts"],
+      "descriptionKo": "플로리다 Silver Krome Gardens에서 A.O.S(에이스 오브 스페이드) 씨앗을 조직배양하던 중 발견된 개체. 유통 자료에 따르면 그중 한 실생이 다른 것보다 훨씬 빨리 자라 배양병을 차지했고, 벌레에 의한 타가수분으로 화분친이 다른 것으로 추정돼 William Rotolante가 '퀸 오브 하츠'로 명명하고 조직배양으로 유지해 왔다. 즉 씨방친은 A.O.S, 화분친은 미상이다. 이름은 A.O.S의 카드 이름을 잇는다. ★계통은 판매처 서술에 근거하며 품종등록 기록은 아직 확인하지 못함.",
+      "traits": { "parentage": "A.O.S × 미상(조직배양 중 발견)", "originator": "William Rotolante (Silver Krome Gardens)", "propagation": "조직배양(TC)" },
+      "tags": ["하이브리드", "조직배양", "A.O.S계", "계통미상"],
+      "images": [],
+      "sources": [
+        "https://www.foliage-factory.com/anthurium-queen-of-hearts"
+      ],
+      "verified": false
+    },
+    {
       "id": "michelle",
       "displayName": "미쉘",
       "scientificName": "Anthurium 'Michelle' (DocBlock)",
-      "type": "selection",
+      "type": "hybrid",
       "abbreviations": [],
-      "parents": [],
-      "selectionOf": "magnificum",
+      "parents": ["magnificum"],
       "aka": ["DocBlock Michelle", "Michelle"],
       "descriptionKo": "플로리다 브리더 닥블락(Dr. Jeff Block)의 대표 선별 개체로, 그의 아내 이름을 땄다. 콜롬비아산 Anthurium magnificum 품종에서 출발해 4세대에 걸쳐 수천 개체를 선별하며 색과 세력을 다듬었고, 원본 'Michelle' 개체를 공식 조직배양(TC) 클론으로 고정해 유전적으로 균일하게 보급한다. 2022년 TPIE에서 'Best New Flowering Plant'를 수상. 벨벳 하트형 잎이 버건디·퍼플로 전개됐다가 짙은 녹색으로 성숙하며 잎맥은 흰색~분홍색 대비, 잎 뒷면은 라벤더→옅은 녹색으로 변한다.",
       "traits": { "leaf": "하트형", "vein": "흰~분홍 잎맥", "texture": "벨벳", "newLeaf": "버건디·퍼플 전개", "underside": "라벤더→옅은 녹색", "size": "초장 약 30~60cm", "origin": "A. magnificum 품종 4세대 선별", "propagation": "공식 조직배양(TC) 클론", "breeder": "닥블락(Dr. Jeff Block)" },
@@ -342,10 +363,9 @@
       "id": "zara",
       "displayName": "자라",
       "scientificName": "Anthurium 'Zara' (DocBlock)",
-      "type": "selection",
+      "type": "hybrid",
       "abbreviations": [],
-      "parents": [],
-      "selectionOf": "magnificum",
+      "parents": ["magnificum", "crystallinum"],
       "aka": ["DocBlock Zara", "Zara"],
       "descriptionKo": "닥블락(Dr. Jeff Block)의 F4 선별 개체(2022). 출처상 씨방친은 Anthurium magnificum, 화분친은 붉은 잎을 내는 Anthurium crystallinum 품종으로, 매그니피컴 라인에 crystallinum이 섞인 계통을 선별해 고정한 클론이다. 신엽이 선명한 퍼플~레드로 전개됐다가 짙은 녹색으로 성숙하며, 레드·실버가 섞인 굵은 잎맥과 잎자루 부착부의 붉은 'red-eye'가 식별 포인트. 두껍고 벨벳질인 잎. '미쉘 × 자라' 교배의 부모로도 유명하다.",
       "traits": { "leaf": "하트형", "vein": "레드·실버 잎맥", "texture": "두껍고 벨벳", "newLeaf": "퍼플~레드 전개", "feature": "잎자루 부착부 'red-eye'", "origin": "씨방친 magnificum × 화분친 붉은 crystallinum 품종 (F4 선별)", "breeder": "닥블락(Dr. Jeff Block)" },
@@ -358,28 +378,10 @@
       "verified": true
     },
     {
-      "id": "michelle-x-zara",
-      "displayName": "미쉘 × 자라",
-      "scientificName": "Anthurium 'Michelle' × 'Zara' (DocBlock)",
-      "type": "hybrid",
-      "abbreviations": ["MxZ"],
-      "parents": ["michelle", "zara"],
-      "aka": ["Michelle x Zara", "Zara x Michelle"],
-      "descriptionKo": "닥블락(Dr. Jeff Block)의 두 인기 개체 미쉘 × 자라 교배. 신엽이 버건디·퍼플에서 레드·브라운에 이르는 강렬한 색으로 전개됐다가, 성숙하며 벨벳질 짙은 녹색으로 변하고 앞·뒷면에 잎맥 대비가 또렷하게 드러난다. 다시 다른 개체와의 추가 교배(F2 등) 부모로도 널리 쓰인다.",
-      "traits": { "leaf": "하트형", "vein": "앞뒤로 또렷한 잎맥 대비", "texture": "벨벳", "newLeaf": "버건디·퍼플~레드·브라운 전개", "color": "성숙 시 짙은 녹색", "breeder": "닥블락(Dr. Jeff Block)" },
-      "tags": ["하이브리드", "교배", "벨벳", "신엽컬러", "닥블락"],
-      "images": ["images/michelle-x-zara.jpg"],
-      "sources": [
-        "https://www.carnivero.com/products/anthurium-zara-x-michelle-x-doc-block-f2",
-        "https://growtropicals.com/products/anthurium-zara-x-michelle-x-luxurians"
-      ],
-      "verified": true
-    },
-    {
       "id": "fs",
       "displayName": "포트 셔먼",
       "scientificName": "Anthurium papillilaminum 'Fort Sherman'",
-      "type": "selection",
+      "type": "species",
       "abbreviations": ["FS"],
       "parents": [],
       "selectionOf": "papillilaminum",
@@ -398,7 +400,7 @@
       "id": "rl",
       "displayName": "랄프 라이넘",
       "scientificName": "Anthurium papillilaminum 'Ralph Lynam'",
-      "type": "selection",
+      "type": "species",
       "abbreviations": ["RL"],
       "parents": [],
       "selectionOf": "papillilaminum",
@@ -410,24 +412,6 @@
       "sources": [
         "https://happiestplants.com/products/anthurium-rlfs-menace-black-x-ralph-lynam",
         "https://greenfelicities.com/a-papillilaminum-rlfs-x-carlablackiae/"
-      ],
-      "verified": true
-    },
-    {
-      "id": "fsxrl",
-      "displayName": "FSxRL (포트 셔먼 × 랄프 라이넘)",
-      "scientificName": "Anthurium papillilaminum ('Fort Sherman' × 'Ralph Lynam')",
-      "type": "hybrid",
-      "abbreviations": ["FSxRL", "FS x RL", "RLFS"],
-      "parents": ["fs", "rl"],
-      "aka": ["RLFS", "Fort Sherman x Ralph Lynam"],
-      "descriptionKo": "포트 셔먼(FS) × 랄프 라이넘(RL) 교배. 두 부모가 모두 파필리라미넘(papillilaminum) 선별 클론이라, 사실상 papillilaminum 라인브리딩에 가깝다. 초다크(거의 흑색) 잎에 선명한 레드 잎맥 대비가 특징. 'RLFS'로도 불린다. 입문자가 약어를 보고 가장 막막해하는 대표 사례 — 검색창에 'FSxRL'/'RLFS'를 치거나 아래 부모를 클릭해 계보를 따라가 보세요.",
-      "traits": { "leaf": "길쭉한 하트형", "color": "초다크(거의 흑색)", "vein": "선명한 레드 잎맥", "texture": "벨벳", "lineage": "papillilaminum × papillilaminum(선별 클론 교배)" },
-      "tags": ["하이브리드", "교배", "papillilaminum", "다크", "레드맥", "벨벳"],
-      "images": ["images/fsxrl.png"],
-      "sources": [
-        "https://www.protoleaf.ca/products/anthurium-fs-rl",
-        "https://happiestplants.com/products/anthurium-rlfs-menace-black-x-ralph-lynam"
       ],
       "verified": true
     },
