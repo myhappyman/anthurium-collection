@@ -236,6 +236,26 @@
           "date": "2026-11-11"
         }
       ]
+    },
+    {
+      "id": "antolakii-no3",
+      "sourceDir": "bvep PlantArchive no.3",
+      "displayName": "안톨라키 No.3 (BVEP)",
+      "label": "Antolakii No.3, BVEP",
+      "kind": "species",
+      "catalogRefs": [
+        "antolakii"
+      ],
+      "parentage": "antolakii (Scott Cohen) self (S1), 선별 개체 No.3의 분주",
+      "provenanceGrade": "photo",
+      "noteKo": "판매명 '안스리움 안톨라키 No.3 / Antolakii, BVEP'. 한국 브리더 박건(플랜트아카이브 운영)이 보유한 미국 브리더 스콧 코헨(Scott Cohen)의 안톨라키를 자가 교배(S1)해 얻은 실생 중 선별한 개체로, 'No.3'으로 불린다. 이 개체는 No.3을 분주한 클론이라 자라면 선별 당시 No.3과 거의 같은 모습이 될 것으로 본다. 증빙으로 모주(스콧 코헨 안톨라키) 사진 1장과 No.3 선별 당시 사진 2장이 있으며, 보유 개체의 현재 사진은 추후 등록 예정.",
+      "events": [
+        {
+          "type": "note",
+          "summary": "플랜트아카이브 네이버 스마트스토어에서 구매 (No.3 분주 개체)",
+          "date": "2026-11-24"
+        }
+      ]
     }
   ]
 }
