@@ -30,6 +30,8 @@ const specimenEventSchema = z.object({
 export const specimenSchema = z.object({
   id: z.string().min(1),
   sourceDir: z.string().min(1),
+  /** 대표 사진으로 쓸 원본 파일명(docs/ref/<sourceDir>/ 기준). 없으면 파일명 순서의 마지막 사진 */
+  coverPhoto: z.string().min(1).optional(),
   displayName: z.string().min(1),
   label: z.string().min(1),
   kind: specimenKindSchema,

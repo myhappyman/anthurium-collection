@@ -8,6 +8,8 @@
 사용법: python3 scripts/build-collection-images.py
 - 원본(docs/ref)은 건드리지 않는다.
 - 폴더 이름 → slug 매핑은 data/collection.json 의 각 항목 `sourceDir` 를 따른다.
+- 대표 사진은 웹에서 목록의 마지막 사진이다. 원본 파일명 순서가 맞지 않으면
+  항목에 `coverPhoto`(원본 파일명)를 적어 그 사진을 맨 뒤로 보낸다.
 """
 from __future__ import annotations
 
@@ -45,6 +47,16 @@ def list_images(directory: Path) -> list[Path]:
         (p for p in directory.iterdir() if p.is_file() and p.suffix.lower() in IMAGE_SUFFIXES),
         key=natural_key,
     )
+
+
+def order_photos(images: list[Path], cover_name: str | None) -> list[Path]:
+    """coverPhoto 로 지정한 사진을 맨 뒤(=대표 사진)로 옮긴다."""
+    if not cover_name:
+        return images
+    cover = [p for p in images if p.name == cover_name]
+    if not cover:
+        raise SystemExit(f"coverPhoto 파일을 찾을 수 없음: {cover_name}")
+    return [p for p in images if p.name != cover_name] + cover
 
 
 def content_hash(path: Path) -> str:
@@ -89,7 +101,9 @@ def main() -> int:
         shutil.rmtree(PRIVATE_OUT_DIR / slug, ignore_errors=True)
 
         photos = []
-        for index, src in enumerate(list_images(source_dir), start=1):
+        for index, src in enumerate(
+            order_photos(list_images(source_dir), entry.get("coverPhoto")), start=1
+        ):
             name = output_name(index, src)
             dest = OUT_DIR / slug / name
             photos.append(convert(src, dest, PHOTO_MAX, f"/collection/{slug}/{name}"))
