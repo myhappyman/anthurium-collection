@@ -229,16 +229,16 @@
   "red-crystallinum-tezula-purple-s1": {
     "photos": [
       {
-        "src": "/collection/red-crystallinum-tezula-purple-s1/01-9d3c0669.jpg",
-        "width": 768,
-        "height": 1024,
-        "original": "docs/ref/RedCrystallinum TezulaPurple s1/42F5F164-3FC3-4AB2-AA2E-A3E530EABD86_1_105_c.jpeg"
-      },
-      {
-        "src": "/collection/red-crystallinum-tezula-purple-s1/02-6fd34143.jpg",
+        "src": "/collection/red-crystallinum-tezula-purple-s1/01-6fd34143.jpg",
         "width": 768,
         "height": 1024,
         "original": "docs/ref/RedCrystallinum TezulaPurple s1/06296E8F-D3DA-4861-963E-8C8AA4B17C39_1_105_c.jpeg"
+      },
+      {
+        "src": "/collection/red-crystallinum-tezula-purple-s1/02-9d3c0669.jpg",
+        "width": 768,
+        "height": 1024,
+        "original": "docs/ref/RedCrystallinum TezulaPurple s1/42F5F164-3FC3-4AB2-AA2E-A3E530EABD86_1_105_c.jpeg"
       }
     ]
   },

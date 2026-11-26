@@ -215,6 +215,7 @@
     {
       "id": "red-crystallinum-tezula-purple-s1",
       "sourceDir": "RedCrystallinum TezulaPurple s1",
+      "coverPhoto": "42F5F164-3FC3-4AB2-AA2E-A3E530EABD86_1_105_c.jpeg",
       "displayName": "퍼플 크리스탈리넘 s1",
       "label": "Red Crystallinum 'Tezula Purple' S1",
       "kind": "hybrid",
@@ -227,7 +228,7 @@
       "events": [
         {
           "type": "note",
-          "summary": "네이버 스마트스토어 주문, 미도착",
+          "summary": "네이버 스마트스토어 주문",
           "date": "2026-11-10"
         },
         {
