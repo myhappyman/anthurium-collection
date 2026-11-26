@@ -31,7 +31,7 @@ TRACKING_MANIFEST_JSON = ROOT / "private" / "collection-tracking.json"
 PHOTO_MAX = 1600
 TRACKING_MAX = 1200
 JPEG_QUALITY = 82
-IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".heic"}
+IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".heic", ".webp"}
 
 
 def natural_key(path: Path) -> list[object]:
